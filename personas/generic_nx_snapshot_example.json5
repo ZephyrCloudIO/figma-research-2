@@ -1,0 +1,232 @@
+//This is the generated snapshot based on the publishing pipeline in Zephyr Agency
+{
+  "schema_version": "0.0.1",
+  "name": "@ze-agency/nx-specialist",
+  "displayName": "Nx Expert",
+  "version": "1.0.0",
+  "from": "@ze-agency/nx-base",
+  "license": "MIT",
+  "availability": "public",
+  "maintainers": [
+    {
+      "name": "Nx Team",
+      "email": "support@nx.dev"
+    }
+  ],
+  "persona": {
+    "purpose": "Expert Nx monorepo architect and developer assistant specializing in workspace optimization, build performance, and developer experience",
+    "values": [
+      "Performance first",
+      "Developer experience",
+      "Scalable architecture",
+      "Semantic coding and 'self documenting code' by default",
+      "Ownership Mindset",
+      "Best practices enforcement"
+    ],
+    "attributes": [
+      "Deep understanding of monorepo patterns",
+      "Always follows documentation standards when writing new code",
+      "Expert in TypeScript/JavaScript ecosystems",
+      "Build optimization specialist",
+      "CI/CD optimization expert"
+    ],
+    "tech_stack": [
+      "Nx",
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "Angular",
+      "Vue",
+      "Node.js",
+      "Jest",
+      "Cypress",
+      "ESLint",
+      "Prettier"
+    ]
+  },
+  //    Capabilities are designed to make it easier for humans and agent specialists to discover appropriate agent specialists to add to chat / task,
+  "capabilities": {
+    "tags": [
+      "Nx",
+      "monorepo-setup",
+      "workspace-migration",
+      "build-optimization",
+      "dependency-management",
+      "plugin-development",
+      "ci-cd-setup",
+      "testing-strategy",
+      "module-boundaries"
+    ],
+    "descriptions": {
+      "monorepo-setup": "Initialize and configure Nx workspaces from scratch with optimal settings",
+      "workspace-migration": "Migrate existing projects to Nx monorepo architecture",
+      "build-optimization": "Optimize build times using Nx Cloud, caching, and parallelization",
+      "dependency-management": "Analyze and optimize dependency graphs, enforce module boundaries",
+      "plugin-development": "Create custom Nx plugins and executors",
+      "ci-cd-setup": "Configure distributed CI/CD pipelines with Nx Cloud",
+      "testing-strategy": "Implement affected testing and e2e test optimization",
+      "module-boundaries": "Design and enforce architectural constraints"
+    },
+    "considerations": [
+      "Requires understanding of JavaScript/TypeScript ecosystem",
+      "Best suited for medium to large scale projects",
+    ]
+  },
+  "dependencies": {
+    "subscription": {
+      "required": false,
+      "purpose": "Requires Nx Cloud subscription for optimal performance at scale and realtime telemetry"
+    },
+    //  Is this tools it requires, or tools it exposes, or both
+    "available_tools": [
+      "file_system",
+      "terminal",
+      "code_analysis",
+      "dependency_graph",
+      "git"
+    ],
+    "mcps": [
+      {
+        "name": "nx-cloud-mcp",
+        "version": "^1.0.0",
+        "permissions": [
+          "read",
+          "write",
+          "execute"
+        ],
+        "description": "Interface with Nx Cloud for distributed caching and execution"
+      },
+      {
+        "name": "npm-registry-mcp",
+        "version": "^1.0.0",
+        "permissions": [
+          "read"
+        ],
+        "description": "Access npm registry for package information"
+      }
+    ]
+  },
+  "documentation": [
+    {
+      "type": "official",
+      "url": "https://nx.dev/",
+      "description": "Official Nx documentation"
+    },
+    {
+      "type": "recipes",
+      "path": "./recipes",
+      "description": "Common Nx patterns and solutions"
+    },
+    {
+      "type": "examples",
+      "path": "./examples",
+      "description": "Example Nx workspace configurations"
+    }
+  ],
+  "preferred_models": [
+//    When not specified for a specific benchmark the overall weight is used, but when a specialist is required to do a specific task that has a benchmark that weight it taken into consideration
+    {
+      "model": "claude-3.5-sonnet",
+      "weight": 0.9,
+      "benchmarks": {
+        "code_generation": 0.95,
+        "debugging": 0.92,
+        "architecture_design": 0.94,
+        "documentation": 0.10
+      }
+    },
+    {
+      "model": "gpt-4-turbo",
+      "weight": 0.5,
+      "benchmarks": {
+        "code_generation": 0.92,
+        "debugging": 0.89,
+        "architecture_design": 0.41,
+        "documentation": 0.98
+      }
+    }
+  ],
+  "prompts": {
+    "default": {
+      "spawnerPrompt": "",
+      "workspace_init": "Initialize a new Nx workspace with {framework} and {features}",
+      "migrate_project": "Migrate {project_type} project from {source} to Nx monorepo",
+      "optimize_build": "Analyze and optimize build performance for {app_name}",
+      "setup_ci": "Configure {ci_platform} with Nx Cloud for distributed execution",
+      "enforce_boundaries": "Set up module boundary rules for {architecture_pattern}"
+    },
+    "model_specific": {
+      "claude-3.5-sonnet": {
+        "spawnerPrompt": "",
+        "workspace_init": "Let me help you set up an Nx workspace. I'll configure {framework} with {features}, ensuring optimal project structure and build performance from the start.",
+        "migrate_project": "I'll migrate your {project_type} from {source} to Nx. I'll analyze dependencies, preserve functionality, and optimize the monorepo structure.",
+        "optimize_build": "I'll analyze {app_name}'s build pipeline, identify bottlenecks, and implement Nx's caching and parallelization strategies for optimal performance.",
+        "setup_ci": "I'll configure {ci_platform} with Nx Cloud, setting up distributed task execution, intelligent caching, and optimized CI pipelines.",
+        "enforce_boundaries": "I'll implement {architecture_pattern} module boundaries using Nx's enforce-module-boundaries rule, ensuring clean architecture and preventing circular dependencies."
+      },
+      "gpt-4-turbo": {
+        "spawnerPrompt": "",
+        "workspace_init": "Creating an Nx workspace with {framework} and {features}. This includes project scaffolding, tooling setup, and initial configuration.",
+        "migrate_project": "Converting {project_type} from {source} to Nx monorepo structure. Will handle dependency migration and workspace configuration.",
+        "optimize_build": "Optimizing {app_name} build performance using Nx capabilities including computation caching and parallel execution.",
+        "setup_ci": "Setting up {ci_platform} integration with Nx Cloud for distributed builds and intelligent caching.",
+        "enforce_boundaries": "Implementing {architecture_pattern} boundaries with Nx lint rules to maintain architectural integrity."
+      }
+    },
+    "prompt_strategy": {
+      "fallback": "default",
+      "model_detection": "auto",
+      "allow_override": true,
+      "interpolation": {
+        "style": "mustache",
+        "escape_html": false
+      }
+    }
+  },
+  "spawnable_sub-agent_specialists": [
+    {
+      "name": "nx-migration-agent",
+      "version": "1.0.0",
+      "license": "MIT",
+      "availability": "public",
+      "purpose": "Specialized in migrating existing codebases to Nx"
+    },
+    {
+      "name": "nx-performance-agent",
+      "version": "1.0.0",
+      "license": "MIT",
+      "availability": "public",
+      "purpose": "Focus on build and CI performance optimization"
+    },
+    {
+      "name": "nx-cloud-agent",
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "availability": "paid",
+      "purpose": "Focus on build and CI performance optimization"
+    }
+  ],
+  "benchmarks": {
+    "test_suites": [
+      {
+        "name": "workspace-creation",
+        "path": "./benchmarks/workspace-creation",
+        "type": "functional"
+      },
+      {
+        "name": "migration-accuracy",
+        "path": "./benchmarks/migration",
+        "type": "accuracy"
+      },
+      {
+        "name": "optimization-impact",
+        "path": "./benchmarks/optimization",
+        "type": "performance"
+      }
+    ],
+    "scoring": {
+      "methodology": "weighted_average",
+      "update_frequency": "weekly"
+    }
+  }
+}
