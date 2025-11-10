@@ -62,7 +62,7 @@ export class ComponentMatcher {
 
   constructor(
     dbPath: string,
-    thresholds: ThresholdConfig = { exactMatch: 0.85, similarMatch: 0.75 }
+    thresholds: ThresholdConfig = { exactMatch: 0.87, similarMatch: 0.73 }
   ) {
     this.db = new FigmaDatabase(dbPath);
     this.apiKey = process.env.OPENROUTER || '';

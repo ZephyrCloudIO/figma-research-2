@@ -333,10 +333,10 @@ function selectBestResult(
     throw new Error('All models failed to generate code');
   }
 
-  // Score each result
+  // Score each result - no model preference, let validation score decide
   const scored = successfulResults.map(result => {
     const validation = validateCode(result.code!, criteria);
-    const score = validation.score * result.model.includes('gemini') ? 1.1 : 1.0; // Slight preference for Gemini
+    const score = validation.score; // Pure validation score, no model bias
 
     if (verbose) {
       console.log(`    [${result.model}] Score: ${score.toFixed(1)} (validation: ${validation.score}, issues: ${validation.issues.length})`);

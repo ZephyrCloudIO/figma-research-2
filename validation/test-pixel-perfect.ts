@@ -24,17 +24,20 @@ const testComponents: ComponentData[] = [
     name: 'Button',
     type: 'Button',
     styles: {
-      backgroundColor: '#7c3aed',
-      color: '#ffffff',
+      backgroundColor: 'rgba(124, 58, 237, 1)', // #7c3aed - matches Figma primary purple
+      color: 'rgba(250, 250, 250, 1)', // #fafafa - matches Figma white
       padding: '8px 16px',
       borderRadius: '6px',
       fontSize: '14px',
-      fontWeight: '500'
+      fontWeight: '500',
+      width: '80px',
+      height: '36px'
     },
     properties: {
       variant: 'primary',
       size: 'medium',
-      text: 'Click Me'
+      text: 'Button', // MATCHES Figma mock exactly
+      children: 'Button'
     }
   },
 
@@ -44,16 +47,19 @@ const testComponents: ComponentData[] = [
     name: 'Badge',
     type: 'Badge',
     styles: {
-      backgroundColor: '#ef4444',
-      color: '#ffffff',
+      backgroundColor: 'rgba(239, 68, 68, 1)', // #ef4444 - matches Figma
+      color: 'rgba(255, 255, 255, 1)',
       padding: '4px 8px',
       borderRadius: '9999px',
       fontSize: '12px',
-      fontWeight: '600'
+      fontWeight: '600',
+      width: '60px',
+      height: '24px'
     },
     properties: {
       variant: 'error',
-      text: 'New'
+      text: 'New', // MATCHES Figma mock exactly
+      children: 'New'
     }
   },
 
@@ -63,18 +69,19 @@ const testComponents: ComponentData[] = [
     name: 'Card',
     type: 'Card',
     styles: {
-      backgroundColor: '#ffffff',
-      border: '1px solid #e5e7eb',
+      backgroundColor: 'rgba(255, 255, 255, 1)',
+      border: '1px solid rgba(229, 231, 235, 1)', // #e5e7eb
       borderRadius: '8px',
       padding: '16px',
       boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
       width: '300px',
-      minHeight: '120px'
+      height: '200px'
     },
     properties: {
-      title: 'Card Title',
-      description: 'This is a card component with some content',
-      hasActions: false
+      title: 'Card Title', // MATCHES Figma mock exactly
+      description: '', // Empty - Figma mock has no description
+      hasActions: false,
+      children: 'Card Title'
     }
   },
 
@@ -84,18 +91,20 @@ const testComponents: ComponentData[] = [
     name: 'Input',
     type: 'Input',
     styles: {
-      backgroundColor: '#ffffff',
-      border: '1px solid #d1d5db',
+      backgroundColor: 'rgba(255, 255, 255, 1)',
+      border: '1px solid rgba(209, 213, 219, 1)', // #d1d5db
       borderRadius: '6px',
       padding: '8px 12px',
       fontSize: '14px',
+      color: 'rgba(156, 163, 175, 1)', // #9ca3af - placeholder color
       width: '240px',
       height: '40px'
     },
     properties: {
       type: 'text',
-      placeholder: 'Enter text...',
-      label: 'Input Field'
+      placeholder: 'Enter text...', // MATCHES Figma mock exactly
+      value: 'Enter text...',
+      label: ''
     }
   },
 
@@ -105,19 +114,20 @@ const testComponents: ComponentData[] = [
     name: 'Dialog',
     type: 'Dialog',
     styles: {
-      backgroundColor: '#ffffff',
+      backgroundColor: 'rgba(255, 255, 255, 1)',
       borderRadius: '12px',
       padding: '24px',
       boxShadow: '0 20px 25px -5px rgba(0,0,0,0.1)',
       width: '400px',
-      minHeight: '200px'
+      height: '300px'
     },
     properties: {
-      title: 'Confirm Action',
-      description: 'Are you sure you want to proceed with this action?',
-      showCloseButton: true,
-      primaryAction: 'Confirm',
-      secondaryAction: 'Cancel'
+      title: 'Dialog Title', // MATCHES Figma mock exactly
+      description: '', // Empty - Figma mock has no description
+      showCloseButton: false, // Figma mock is simple
+      primaryAction: '',
+      secondaryAction: '',
+      children: 'Dialog Title'
     }
   }
 ];

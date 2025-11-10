@@ -1,0 +1,728 @@
+{
+  "summary": {
+    "totalTests": 47,
+    "correctTests": 47,
+    "incorrectTests": 0,
+    "accuracy": "100.00%",
+    "averageConfidence": "0.850",
+    "passedTarget": true
+  },
+  "byComponentType": {
+    "Button": {
+      "correct": 24,
+      "total": 24,
+      "avgConfidence": 0.8229166666666666
+    },
+    "Icon": {
+      "correct": 9,
+      "total": 9,
+      "avgConfidence": 1
+    },
+    "Card": {
+      "correct": 1,
+      "total": 1,
+      "avgConfidence": 0.9
+    },
+    "Input": {
+      "correct": 1,
+      "total": 1,
+      "avgConfidence": 0.9
+    },
+    "Checkbox": {
+      "correct": 1,
+      "total": 1,
+      "avgConfidence": 0.8
+    },
+    "Radio": {
+      "correct": 1,
+      "total": 1,
+      "avgConfidence": 0.8999999999999999
+    },
+    "Switch": {
+      "correct": 1,
+      "total": 1,
+      "avgConfidence": 0.8999999999999999
+    },
+    "Badge": {
+      "correct": 2,
+      "total": 2,
+      "avgConfidence": 0.75
+    },
+    "Avatar": {
+      "correct": 1,
+      "total": 1,
+      "avgConfidence": 0.8999999999999999
+    },
+    "Dialog": {
+      "correct": 1,
+      "total": 1,
+      "avgConfidence": 0.8999999999999999
+    },
+    "Select": {
+      "correct": 1,
+      "total": 1,
+      "avgConfidence": 0.8999999999999999
+    },
+    "Container": {
+      "correct": 2,
+      "total": 2,
+      "avgConfidence": 0.3
+    },
+    "Text": {
+      "correct": 1,
+      "total": 1,
+      "avgConfidence": 1
+    },
+    "Image": {
+      "correct": 1,
+      "total": 1,
+      "avgConfidence": 1
+    }
+  },
+  "confusionMatrix": {
+    "Button": {
+      "Button": 24
+    },
+    "Icon": {
+      "Icon": 9
+    },
+    "Card": {
+      "Card": 1
+    },
+    "Input": {
+      "Input": 1
+    },
+    "Checkbox": {
+      "Checkbox": 1
+    },
+    "Radio": {
+      "Radio": 1
+    },
+    "Switch": {
+      "Switch": 1
+    },
+    "Badge": {
+      "Badge": 2
+    },
+    "Avatar": {
+      "Avatar": 1
+    },
+    "Dialog": {
+      "Dialog": 1
+    },
+    "Select": {
+      "Select": 1
+    },
+    "Container": {
+      "Container": 2
+    },
+    "Text": {
+      "Text": 1
+    },
+    "Image": {
+      "Image": 1
+    }
+  },
+  "failures": [],
+  "allResults": [
+    {
+      "name": "Variant=Default, State=Default, Size=default",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.7000000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has background and is interactive",
+        "Size matches typical button dimensions",
+        "Has rounded corners"
+      ],
+      "correct": true,
+      "description": "Default button variant"
+    },
+    {
+      "name": "Variant=Default, State=Focus, Size=default",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Button with focus state"
+    },
+    {
+      "name": "Variant=Default, State=Hover, Size=default",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Button with hover state"
+    },
+    {
+      "name": "Variant=Default, State=Disabled, Size=default",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Disabled button variant"
+    },
+    {
+      "name": "Variant=Default, State=Loading, Size=default",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Loading button state"
+    },
+    {
+      "name": "Variant=Secondary, State=Default, Size=default",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.75,
+      "reasons": [
+        "Variant type \"secondary\" indicates button component",
+        "Contains button variant keywords",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Secondary button variant"
+    },
+    {
+      "name": "Variant=Secondary, State=Focus, Size=default",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 1,
+      "reasons": [
+        "Variant type \"secondary\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Contains button variant keywords",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Secondary button with focus"
+    },
+    {
+      "name": "Variant=Secondary, State=Hover, Size=default",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 1,
+      "reasons": [
+        "Variant type \"secondary\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Contains button variant keywords",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Secondary button with hover"
+    },
+    {
+      "name": "Variant=Secondary, State=Disabled, Size=default",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 1,
+      "reasons": [
+        "Variant type \"secondary\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Contains button variant keywords",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Disabled secondary button"
+    },
+    {
+      "name": "Variant=Secondary, State=Loading, Size=default",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 1,
+      "reasons": [
+        "Variant type \"secondary\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Contains button variant keywords",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Loading secondary button"
+    },
+    {
+      "name": "Variant=Default, State=Default, Size=lg",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.55,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Large button variant"
+    },
+    {
+      "name": "Variant=Default, State=Focus, Size=lg",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Large button with focus"
+    },
+    {
+      "name": "Variant=Default, State=Hover, Size=lg",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Large button with hover"
+    },
+    {
+      "name": "Variant=Default, State=Disabled, Size=lg",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Disabled large button"
+    },
+    {
+      "name": "Variant=Default, State=Loading, Size=lg",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Loading large button"
+    },
+    {
+      "name": "Variant=Default, State=Default, Size=sm",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.55,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Small button variant"
+    },
+    {
+      "name": "Variant=Default, State=Focus, Size=sm",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Small button with focus"
+    },
+    {
+      "name": "Variant=Default, State=Hover, Size=sm",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Small button with hover"
+    },
+    {
+      "name": "Variant=Default, State=Disabled, Size=sm",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Disabled small button"
+    },
+    {
+      "name": "Variant=Default, State=Loading, Size=sm",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.8500000000000001,
+      "reasons": [
+        "Variant type \"default\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Loading small button"
+    },
+    {
+      "name": "Variant=Secondary, State=Default, Size=lg",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.75,
+      "reasons": [
+        "Variant type \"secondary\" indicates button component",
+        "Contains button variant keywords",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Large secondary button"
+    },
+    {
+      "name": "Variant=Secondary, State=Focus, Size=lg",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 1,
+      "reasons": [
+        "Variant type \"secondary\" indicates button component",
+        "Has interactive state property (hover/focus/disabled/loading)",
+        "Contains button variant keywords",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Large secondary button with focus"
+    },
+    {
+      "name": "Variant=Default, State=Default, Size=icon",
+      "expected": "Icon",
+      "actual": "Icon",
+      "confidence": 1,
+      "reasons": [
+        "Name contains \"icon\"",
+        "Size=icon indicates icon component",
+        "Small, square dimensions"
+      ],
+      "correct": true,
+      "description": "Icon button variant"
+    },
+    {
+      "name": "Variant=Default, State=Focus, Size=icon",
+      "expected": "Icon",
+      "actual": "Icon",
+      "confidence": 1,
+      "reasons": [
+        "Name contains \"icon\"",
+        "Size=icon indicates icon component",
+        "Small, square dimensions"
+      ],
+      "correct": true,
+      "description": "Icon button with focus"
+    },
+    {
+      "name": "Variant=Default, State=Hover, Size=icon",
+      "expected": "Icon",
+      "actual": "Icon",
+      "confidence": 1,
+      "reasons": [
+        "Name contains \"icon\"",
+        "Size=icon indicates icon component",
+        "Small, square dimensions"
+      ],
+      "correct": true,
+      "description": "Icon button with hover"
+    },
+    {
+      "name": "Variant=Default, State=Disabled, Size=icon",
+      "expected": "Icon",
+      "actual": "Icon",
+      "confidence": 1,
+      "reasons": [
+        "Name contains \"icon\"",
+        "Size=icon indicates icon component",
+        "Small, square dimensions"
+      ],
+      "correct": true,
+      "description": "Disabled icon button"
+    },
+    {
+      "name": "Variant=Secondary, State=Default, Size=icon",
+      "expected": "Icon",
+      "actual": "Icon",
+      "confidence": 1,
+      "reasons": [
+        "Name contains \"icon\"",
+        "Size=icon indicates icon component",
+        "Small, square dimensions"
+      ],
+      "correct": true,
+      "description": "Secondary icon button"
+    },
+    {
+      "name": "Variant=Secondary, State=Focus, Size=icon",
+      "expected": "Icon",
+      "actual": "Icon",
+      "confidence": 1,
+      "reasons": [
+        "Name contains \"icon\"",
+        "Size=icon indicates icon component",
+        "Small, square dimensions"
+      ],
+      "correct": true,
+      "description": "Secondary icon with focus"
+    },
+    {
+      "name": "Variant=Secondary, State=Hover, Size=icon",
+      "expected": "Icon",
+      "actual": "Icon",
+      "confidence": 1,
+      "reasons": [
+        "Name contains \"icon\"",
+        "Size=icon indicates icon component",
+        "Small, square dimensions"
+      ],
+      "correct": true,
+      "description": "Secondary icon with hover"
+    },
+    {
+      "name": "Variant=Secondary, State=Disabled, Size=icon",
+      "expected": "Icon",
+      "actual": "Icon",
+      "confidence": 1,
+      "reasons": [
+        "Name contains \"icon\"",
+        "Size=icon indicates icon component",
+        "Small, square dimensions"
+      ],
+      "correct": true,
+      "description": "Disabled secondary icon"
+    },
+    {
+      "name": "Button Primary",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.7000000000000001,
+      "reasons": [
+        "Name contains \"button\"",
+        "Has background and is interactive",
+        "Size matches typical button dimensions",
+        "Has rounded corners"
+      ],
+      "correct": true,
+      "description": "Explicit button with name"
+    },
+    {
+      "name": "Primary Action Button",
+      "expected": "Button",
+      "actual": "Button",
+      "confidence": 0.55,
+      "reasons": [
+        "Name contains \"button\"",
+        "Size matches typical button dimensions"
+      ],
+      "correct": true,
+      "description": "Button with 'button' in name"
+    },
+    {
+      "name": "Card Container",
+      "expected": "Card",
+      "actual": "Card",
+      "confidence": 0.9,
+      "reasons": [
+        "Name contains \"card\"",
+        "Has elevation and multiple content sections",
+        "Size suggests content container"
+      ],
+      "correct": true,
+      "description": "Card with shadow and multiple children"
+    },
+    {
+      "name": "Input Field",
+      "expected": "Input",
+      "actual": "Input",
+      "confidence": 0.9,
+      "reasons": [
+        "Name contains input-related keyword",
+        "Has border and text field",
+        "Width suggests input field"
+      ],
+      "correct": true,
+      "description": "Input with border and text"
+    },
+    {
+      "name": "Checkbox Control",
+      "expected": "Checkbox",
+      "actual": "Checkbox",
+      "confidence": 0.8,
+      "reasons": [
+        "Name contains \"checkbox\"",
+        "Square shape of small size"
+      ],
+      "correct": true,
+      "description": "Small square checkbox"
+    },
+    {
+      "name": "Radio Option",
+      "expected": "Radio",
+      "actual": "Radio",
+      "confidence": 0.8999999999999999,
+      "reasons": [
+        "Name contains \"radio\"",
+        "Circular shape of small size"
+      ],
+      "correct": true,
+      "description": "Circular radio button"
+    },
+    {
+      "name": "Toggle Switch",
+      "expected": "Switch",
+      "actual": "Switch",
+      "confidence": 0.8999999999999999,
+      "reasons": [
+        "Name contains switch/toggle",
+        "Pill shape suggests switch"
+      ],
+      "correct": true,
+      "description": "Pill-shaped switch"
+    },
+    {
+      "name": "Badge Status",
+      "expected": "Badge",
+      "actual": "Badge",
+      "confidence": 0.8999999999999999,
+      "reasons": [
+        "Name contains badge/tag/chip",
+        "Small, rounded container with text"
+      ],
+      "correct": true,
+      "description": "Small rounded badge with text"
+    },
+    {
+      "name": "Avatar Profile",
+      "expected": "Avatar",
+      "actual": "Avatar",
+      "confidence": 0.8999999999999999,
+      "reasons": [
+        "Name contains avatar/profile",
+        "Circular or square shape of appropriate size"
+      ],
+      "correct": true,
+      "description": "Circular avatar"
+    },
+    {
+      "name": "Icon Search",
+      "expected": "Icon",
+      "actual": "Icon",
+      "confidence": 0.9999999999999999,
+      "reasons": [
+        "Name contains \"icon\"",
+        "Small, square dimensions",
+        "Vector-based node"
+      ],
+      "correct": true,
+      "description": "Small vector icon"
+    },
+    {
+      "name": "Dialog Modal",
+      "expected": "Dialog",
+      "actual": "Dialog",
+      "confidence": 0.8999999999999999,
+      "reasons": [
+        "Name contains dialog/modal",
+        "Large container with shadow and multiple sections"
+      ],
+      "correct": true,
+      "description": "Large modal with shadow and sections"
+    },
+    {
+      "name": "Dropdown Select",
+      "expected": "Select",
+      "actual": "Select",
+      "confidence": 0.8999999999999999,
+      "reasons": [
+        "Name contains select/dropdown",
+        "Has text and icon"
+      ],
+      "correct": true,
+      "description": "Select with text and chevron"
+    },
+    {
+      "name": "Frame Container",
+      "expected": "Container",
+      "actual": "Container",
+      "confidence": 0.3,
+      "reasons": [
+        "No specific component type detected"
+      ],
+      "correct": true,
+      "description": "Generic container"
+    },
+    {
+      "name": "Text Label",
+      "expected": "Text",
+      "actual": "Text",
+      "confidence": 1,
+      "reasons": [
+        "Is a text node"
+      ],
+      "correct": true,
+      "description": "Text node"
+    },
+    {
+      "name": "Image Thumbnail",
+      "expected": "Image",
+      "actual": "Image",
+      "confidence": 1,
+      "reasons": [
+        "Name suggests image",
+        "Has image fill"
+      ],
+      "correct": true,
+      "description": "Frame with image fill"
+    },
+    {
+      "name": "Primary Badge",
+      "expected": "Badge",
+      "actual": "Badge",
+      "confidence": 0.6,
+      "reasons": [
+        "Name contains badge/tag/chip"
+      ],
+      "correct": true,
+      "description": "Badge with primary keyword (should not be button)"
+    },
+    {
+      "name": "Destructive Alert",
+      "expected": "Container",
+      "actual": "Container",
+      "confidence": 0.3,
+      "reasons": [
+        "No specific component type detected"
+      ],
+      "correct": true,
+      "description": "Large alert (should not be button despite 'destructive')"
+    }
+  ]
+}

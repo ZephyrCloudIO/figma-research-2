@@ -91,20 +91,27 @@ async function generateCode(
   feedback?: string[]
 ): Promise<{ code: string; latency: number; cost: number; selectedModel: string }> {
   // Build prompt
-  let prompt = `Generate a pixel-perfect React component.
+  let prompt = `Generate a pixel-perfect React component that EXACTLY matches the provided specification.
 
 # Component Data
 \`\`\`json
 ${JSON.stringify(componentData, null, 2)}
 \`\`\`
 
-# Requirements
-1. **TypeScript**: Use proper TypeScript types
-2. **React**: Modern React with function components
-3. **Tailwind CSS**: Use Tailwind utility classes for all styling
-4. **Props**: Create proper props interface with ${componentData.name}Props
-5. **Accessibility**: Include ARIA attributes
-6. **Clean Code**: Production-ready, well-formatted
+# CRITICAL Requirements
+1. **Text Content**: Use EXACT text from componentData.properties (text, children, title, placeholder, etc.)
+   - DO NOT use generic "Sample Text" or placeholders
+   - Use the exact strings provided in the component data
+2. **Colors**: Use EXACT colors from componentData.styles
+   - Match rgba/hex values precisely
+   - Convert to appropriate Tailwind classes (bg-purple-600, text-white, etc.)
+3. **Dimensions**: Match EXACT width and height from componentData.styles
+4. **Typography**: Match font-size, font-weight exactly
+5. **Spacing**: Match padding, border-radius exactly
+6. **TypeScript**: Use proper TypeScript types with ${componentData.name}Props interface
+7. **Tailwind CSS**: Use ONLY Tailwind utility classes for all styling
+8. **Accessibility**: Include ARIA attributes
+9. **Clean Code**: Production-ready, well-formatted
 
 `;
 
@@ -311,11 +318,11 @@ export async function refineComponent(
         continue;
       }
 
-      // Extract feedback
+      // Extract feedback - ensure all entries are strings
       const feedback = [
         ...comparison.semanticResult.differences,
         ...comparison.semanticResult.actionableFeedback
-      ];
+      ].map(f => typeof f === 'string' ? f : JSON.stringify(f));
 
       // Log results
       console.log(`\nResults:`);

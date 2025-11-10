@@ -418,7 +418,8 @@ export class ComponentClassifier {
 
     for (const classifier of classifiers) {
       const result = classifier.call(this, node);
-      if (result.confidence >= 0.5) {
+      // Lowered threshold from 0.5 to 0.4 to catch more specific types
+      if (result.confidence >= 0.4) {
         return result;
       }
     }
@@ -438,10 +439,57 @@ export class ComponentClassifier {
     const reasons: string[] = [];
     let confidence = 0;
 
+    // Skip if this is an icon variant (let icon classifier handle it) (NEW)
+    if (/size\s*=\s*icon/i.test(name)) {
+      return {
+        type: 'Button',
+        confidence: 0,
+        reasons: ['Size=icon suggests icon component, skipping button classification']
+      };
+    }
+
     // Name-based detection
     if (name.includes('button') || name.includes('btn')) {
       confidence += 0.5;
       reasons.push('Name contains "button"');
+    }
+
+    // Variant pattern detection (NEW)
+    const hasVariantPattern = /variant\s*=/i.test(name) ||
+                             /state\s*=/i.test(name) ||
+                             /size\s*=/i.test(name);
+
+    if (hasVariantPattern) {
+      // Check for button-specific variant types
+      const variantType = name.match(/variant\s*=\s*(\w+)/i)?.[1]?.toLowerCase();
+      const isButtonVariant = variantType && ['default', 'primary', 'secondary', 'outline',
+                               'ghost', 'link', 'destructive', 'tertiary'].includes(variantType);
+
+      if (isButtonVariant) {
+        confidence += 0.5;
+        reasons.push(`Variant type "${variantType}" indicates button component`);
+      } else if (hasVariantPattern) {
+        confidence += 0.2;
+        reasons.push('Has variant/state/size properties (common for buttons)');
+      }
+    }
+
+    // Interactive state detection (NEW)
+    const hasInteractiveState = /state\s*=\s*(hover|focus|active|pressed|disabled|loading)/i.test(name);
+    if (hasInteractiveState) {
+      confidence += 0.3;
+      reasons.push('Has interactive state property (hover/focus/disabled/loading)');
+    }
+
+    // Additional button variant keywords (NEW)
+    const hasButtonKeywords = name.includes('primary') ||
+                             name.includes('secondary') ||
+                             name.includes('destructive') ||
+                             name.includes('outline') ||
+                             name.includes('ghost');
+    if (hasButtonKeywords && !name.includes('button')) {
+      confidence += 0.2;
+      reasons.push('Contains button variant keywords');
     }
 
     // Structure-based detection
@@ -451,20 +499,23 @@ export class ComponentClassifier {
     const isInteractive = node.type === 'INSTANCE' || node.type === 'SYMBOL' || node.type === 'COMPONENT';
 
     if (hasBackground && hasText && isInteractive) {
-      confidence += 0.3;
+      confidence += 0.2;
       reasons.push('Has background, text, and is interactive');
+    } else if (hasBackground && isInteractive) {
+      confidence += 0.1;
+      reasons.push('Has background and is interactive');
     }
 
     // Size-based heuristic (buttons are typically small to medium)
     if (node.size && node.size.x > 40 && node.size.x < 300 &&
         node.size.y > 24 && node.size.y < 60) {
-      confidence += 0.1;
+      confidence += 0.05;
       reasons.push('Size matches typical button dimensions');
     }
 
     // Has corner radius (common for buttons)
     if (node.cornerRadius && node.cornerRadius > 0) {
-      confidence += 0.1;
+      confidence += 0.05;
       reasons.push('Has rounded corners');
     }
 
@@ -486,6 +537,22 @@ export class ComponentClassifier {
     if (name.includes('input') || name.includes('textfield') || name.includes('text field')) {
       confidence += 0.6;
       reasons.push('Name contains input-related keyword');
+    }
+
+    // Variant pattern detection for inputs (NEW)
+    const hasVariantPattern = /variant\s*=/i.test(name) ||
+                             /state\s*=/i.test(name);
+
+    if (hasVariantPattern && (name.includes('input') || name.includes('field'))) {
+      confidence += 0.3;
+      reasons.push('Has variant/state properties with input indicators');
+    }
+
+    // Interactive state detection (NEW)
+    const hasInputState = /state\s*=\s*(focus|error|disabled|filled|empty)/i.test(name);
+    if (hasInputState) {
+      confidence += 0.2;
+      reasons.push('Has input-specific state (focus/error/disabled)');
     }
 
     // Typical input structure: frame with border and text
@@ -767,6 +834,12 @@ export class ComponentClassifier {
     if (name.includes('icon') || name.includes('ico ')) {
       confidence += 0.6;
       reasons.push('Name contains "icon"');
+    }
+
+    // Size=icon variant (strong signal for icon buttons) (NEW)
+    if (/size\s*=\s*icon/i.test(name)) {
+      confidence += 0.5;
+      reasons.push('Size=icon indicates icon component');
     }
 
     // Small, square or nearly square
