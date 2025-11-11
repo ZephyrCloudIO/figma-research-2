@@ -270,11 +270,13 @@ function determineAgent(model: string): string {
  */
 function parseScoreFromOutput(output: string): number {
   // Look for score patterns in output
-  // Common patterns: "Score: 85.5", "Final Score: 92%", etc.
+  // ze-benchmarks patterns: "Score (mean ± σ): 9.7632", "Average score: 96.3%"
   const scorePatterns = [
-    /Score:\s*(\d+\.?\d*)/i,
-    /Final Score:\s*(\d+\.?\d*)%?/i,
-    /Total:\s*(\d+\.?\d*)/i,
+    /Score\s*\(mean[^)]*\):\s*(\d+\.?\d*)/i,  // "Score (mean ± σ): 9.7632"
+    /Average score:\s*(\d+\.?\d*)%?/i,        // "Average score: 96.3%"
+    /Score:\s*(\d+\.?\d*)/i,                  // "Score: 85.5"
+    /Final Score:\s*(\d+\.?\d*)%?/i,          // "Final Score: 92%"
+    /Total:\s*(\d+\.?\d*)/i,                  // "Total: 85.5"
   ];
 
   for (const pattern of scorePatterns) {

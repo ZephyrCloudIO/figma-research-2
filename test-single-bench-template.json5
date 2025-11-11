@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.0.1",
+  "name": "@test/single-benchmark",
+  "version": "1.0.0",
+  "license": "MIT",
+  "persona": {
+    "purpose": "Test single benchmark",
+    "values": ["Testing"]
+  },
+  "capabilities": {
+    "tags": ["test"]
+  },
+  "benchmarks": {
+    "test_suites": [
+      {
+        "name": "single-test",
+        "path": "figma-research",
+        "type": "accuracy"
+      }
+    ]
+  },
+  "preferred_models": [
+    {
+      "model": "gpt-4o",
+      "weight": 1.0
+    }
+  ]
+}

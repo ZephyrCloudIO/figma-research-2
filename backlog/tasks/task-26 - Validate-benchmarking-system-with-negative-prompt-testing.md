@@ -5,7 +5,7 @@ status: In Progress
 assignee:
   - Claude
 created_date: '2025-11-10 21:35'
-updated_date: '2025-11-11 00:21'
+updated_date: '2025-11-11 00:37'
 labels:
   - agent-specialists
   - validation
@@ -169,4 +169,15 @@ All prerequisites are complete:
 - Concurrency: 3
 - Output: baseline-results.json
 - Started: 2025-11-11 00:25
+
+## Score Parsing Issue Resolved (task-31)
+
+**Blocker Found:** Benchmarks were running but all scores defaulted to 0 due to parser mismatch.
+
+**Resolution:** Fixed parser in benchmark-runner to match ze-benchmarks output format.
+- Added regex patterns for `Score (mean ± σ): X` and `Average score: X%`
+- Rebuilt benchmark-runner package
+- Verified single benchmark returns correct score (9.7632/10)
+
+**Ready to Resume:** Full validation can now proceed with properly parsed scores.
 <!-- SECTION:NOTES:END -->

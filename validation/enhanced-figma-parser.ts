@@ -447,13 +447,13 @@ export class ComponentClassifier {
     const classifiers = [
       // Phase 3: Data Display components (check before generic components)
       this.classifyTable,        // Before DataTable (Phase 6)
+      this.classifySkeleton,     // Before Tooltip/HoverCard (can be small and gray)
+      this.classifyProgress,     // Before Chart (to avoid "bar"/"line" confusion)
+      this.classifyEmpty,        // Before HoverCard (both have structured content)
       this.classifyChart,
       this.classifyCarousel,
       this.classifyTooltip,      // Before HoverCard (smaller, simpler)
       this.classifyHoverCard,
-      this.classifySkeleton,
-      this.classifyProgress,
-      this.classifyEmpty,
       // Phase 4: Feedback & Overlays (more specific first)
       this.classifyAlertDialog,  // Before Alert and Dialog
       this.classifyAlert,  // Before Sonner to avoid confusion
@@ -2863,6 +2863,12 @@ export class ComponentClassifier {
     const reasons: string[] = [];
     let confidence = 0;
 
+    // NEGATIVE signals - reduce confidence if it looks like Carousel
+    if (name.includes('carousel') || name.includes('slider')) {
+      confidence -= 0.5;
+      reasons.push('NEGATIVE: Name suggests Carousel (not table)');
+    }
+
     // Name-based detection
     if (name.includes('table') && !name.includes('data')) {
       confidence += 0.7;
@@ -2890,6 +2896,21 @@ export class ComponentClassifier {
 
     // Structural detection: table structure with rows and cells
     if (node.children) {
+      // NEGATIVE: Check for carousel-specific elements
+      const hasCarouselElements = node.children.some(child => {
+        const childName = child.name.toLowerCase();
+        return childName.includes('carousel') ||
+               childName.includes('slide') ||
+               (childName.includes('arrow') && (childName.includes('left') || childName.includes('right'))) ||
+               childName.includes('dot') ||
+               childName.includes('indicator') ||
+               childName.includes('pagination');
+      });
+
+      if (hasCarouselElements) {
+        confidence -= 0.4;
+        reasons.push('NEGATIVE: Contains carousel elements (not table)');
+      }
       // Look for header row (thead)
       const hasHeader = node.children.some(child => {
         const childName = child.name.toLowerCase();
@@ -3109,17 +3130,17 @@ export class ComponentClassifier {
 
     // Variant detection
     if (/orientation\s*=\s*(horizontal|vertical)/i.test(name)) {
-      confidence += 0.2;
+      confidence += 0.25;
       reasons.push('Has Orientation variant');
     }
 
-    if (/dots\s*=\s*(yes|no)/i.test(name)) {
-      confidence += 0.15;
+    if (/dots\s*=\s*(yes|no|true|false)/i.test(name)) {
+      confidence += 0.2;
       reasons.push('Has Dots variant (carousel navigation)');
     }
 
-    if (/arrows\s*=\s*(yes|no)/i.test(name)) {
-      confidence += 0.15;
+    if (/arrows\s*=\s*(yes|no|true|false)/i.test(name)) {
+      confidence += 0.2;
       reasons.push('Has Arrows variant (carousel navigation)');
     }
 
@@ -3203,6 +3224,13 @@ export class ComponentClassifier {
     const reasons: string[] = [];
     let confidence = 0;
 
+    // NEGATIVE signals - reduce confidence if it looks like HoverCard
+    if (name.includes('hovercard') || name.includes('hover card') ||
+        (name.includes('hover') && name.includes('popover'))) {
+      confidence -= 0.5;
+      reasons.push('NEGATIVE: Name suggests HoverCard (not tooltip)');
+    }
+
     // Name-based detection
     if (name.includes('tooltip')) {
       confidence += 0.9;
@@ -3212,14 +3240,36 @@ export class ComponentClassifier {
       reasons.push('Name suggests tooltip/hint');
     }
 
-    // Variant detection
-    if (/side\s*=\s*(top|bottom|left|right)/i.test(name)) {
+    // Variant detection - but check it's not HoverCard
+    if (/side\s*=\s*(top|bottom|left|right)/i.test(name) && !name.includes('hover')) {
       confidence += 0.2;
       reasons.push('Has Side variant (tooltip positioning)');
     }
 
     // Structural detection
     if (node.children) {
+      // NEGATIVE: Check for HoverCard-specific structure
+      const hasHeader = node.children.some(child => {
+        const childName = child.name.toLowerCase();
+        return childName.includes('header') && !childName.includes('text');
+      });
+
+      const hasContent = node.children.some(child => {
+        const childName = child.name.toLowerCase();
+        return childName.includes('content') || childName.includes('body');
+      });
+
+      const hasFooter = node.children.some(child => {
+        const childName = child.name.toLowerCase();
+        return childName.includes('footer');
+      });
+
+      // If has structured sections like header/content/footer, it's likely HoverCard
+      if ((hasHeader && hasContent) || hasFooter) {
+        confidence -= 0.4;
+        reasons.push('NEGATIVE: Has structured sections (likely HoverCard)');
+      }
+
       // Look for arrow/pointer
       const hasArrow = node.children.some(child => {
         const childName = child.name.toLowerCase();
@@ -3233,7 +3283,7 @@ export class ComponentClassifier {
         reasons.push('Contains arrow/pointer element');
       }
 
-      // Has text content
+      // Has text content (simple text, not structured)
       const hasText = node.children.some(child =>
         child.type === 'TEXT' || child.children?.some(c => c.type === 'TEXT')
       );
@@ -3242,12 +3292,22 @@ export class ComponentClassifier {
         confidence += 0.2;
         reasons.push('Contains text content');
       }
+
+      // Tooltips typically have very few children (1-2: text + maybe arrow)
+      if (node.children.length <= 2) {
+        confidence += 0.15;
+        reasons.push('Simple structure (1-2 children)');
+      }
     }
 
-    // Small size (tooltips are compact)
-    if (node.size && node.size.x < 300 && node.size.y < 100) {
-      confidence += 0.3;
+    // Small size (tooltips are compact) - stricter bounds
+    if (node.size && node.size.x < 200 && node.size.y < 80) {
+      confidence += 0.35;
       reasons.push('Small size typical of tooltip');
+    } else if (node.size && node.size.x >= 200 && node.size.y >= 100) {
+      // Too large for tooltip, likely HoverCard
+      confidence -= 0.3;
+      reasons.push('NEGATIVE: Too large for tooltip (likely HoverCard)');
     }
 
     // Has shadow/elevation (floating appearance)
@@ -3256,7 +3316,7 @@ export class ComponentClassifier {
     );
 
     if (hasShadow) {
-      confidence += 0.2;
+      confidence += 0.15;
       reasons.push('Has shadow (floating appearance)');
     }
 
@@ -3287,17 +3347,20 @@ export class ComponentClassifier {
 
     // Name-based detection
     if (name.includes('hovercard') || name.includes('hover card')) {
-      confidence += 0.9;
+      confidence += 0.95;
       reasons.push('Name contains "hovercard" or "hover card"');
-    } else if (name.includes('popover') && name.includes('hover')) {
-      confidence += 0.6;
+    } else if (name.includes('hover') && name.includes('popover')) {
+      confidence += 0.8;
       reasons.push('Name suggests hover popover');
+    } else if (name.includes('popover') && name.includes('card')) {
+      confidence += 0.7;
+      reasons.push('Name suggests popover card');
     }
 
-    // Variant detection
-    if (/side\s*=\s*(top|bottom|left|right)/i.test(name)) {
-      confidence += 0.15;
-      reasons.push('Has Side variant');
+    // Variant detection (HoverCard specific)
+    if (/side\s*=\s*(top|bottom|left|right)/i.test(name) && name.includes('hover')) {
+      confidence += 0.2;
+      reasons.push('Has Side variant with hover pattern');
     }
 
     // Structural detection
@@ -3309,11 +3372,11 @@ export class ComponentClassifier {
       });
 
       if (hasArrow) {
-        confidence += 0.2;
+        confidence += 0.25;
         reasons.push('Contains arrow element');
       }
 
-      // Has multiple content sections (header, content, etc.)
+      // Has multiple content sections (header, content, etc.) - key differentiator from Tooltip
       const hasHeader = node.children.some(child => {
         const childName = child.name.toLowerCase();
         return childName.includes('header') || childName.includes('title');
@@ -3324,22 +3387,32 @@ export class ComponentClassifier {
         return childName.includes('content') || childName.includes('body');
       });
 
-      if (hasHeader || hasContent) {
-        confidence += 0.3;
+      const hasFooter = node.children.some(child => {
+        const childName = child.name.toLowerCase();
+        return childName.includes('footer');
+      });
+
+      // HoverCard typically has structured sections
+      if (hasHeader && hasContent) {
+        confidence += 0.4;
+        reasons.push('Has header and content sections (hover card structure)');
+      } else if (hasHeader || hasContent || hasFooter) {
+        confidence += 0.25;
         reasons.push('Has structured content sections');
       }
 
-      // Has multiple children (richer content than tooltip)
+      // Has multiple children (richer content than tooltip) - stronger signal
       if (node.children.length >= 3) {
-        confidence += 0.2;
+        confidence += 0.25;
         reasons.push('Multiple content sections (richer than tooltip)');
       }
     }
 
-    // Medium size (larger than tooltip, smaller than dialog)
-    if (node.size && node.size.x >= 200 && node.size.x < 500 &&
-        node.size.y >= 80 && node.size.y < 400) {
-      confidence += 0.3;
+    // Medium size (larger than tooltip, smaller than empty state/dialog)
+    // HoverCard is typically 200-400px wide, 100-350px tall
+    if (node.size && node.size.x >= 200 && node.size.x <= 400 &&
+        node.size.y >= 80 && node.size.y <= 350) {
+      confidence += 0.35;
       reasons.push('Medium size typical of hover card');
     }
 
@@ -3349,7 +3422,7 @@ export class ComponentClassifier {
     );
 
     if (hasShadow) {
-      confidence += 0.2;
+      confidence += 0.15;
       reasons.push('Has shadow (floating appearance)');
     }
 
@@ -3369,27 +3442,60 @@ export class ComponentClassifier {
     const reasons: string[] = [];
     let confidence = 0;
 
-    // Name-based detection
+    // Name-based detection (strengthened)
     if (name.includes('skeleton')) {
       confidence += 0.9;
       reasons.push('Name contains "skeleton"');
     } else if (name.includes('placeholder') && name.includes('loading')) {
-      confidence += 0.7;
+      confidence += 0.8;
       reasons.push('Name suggests loading placeholder');
+    } else if (name.includes('loading') && name.includes('placeholder')) {
+      confidence += 0.8;
+      reasons.push('Name contains "loading placeholder"');
     } else if (name.includes('shimmer')) {
-      confidence += 0.6;
+      confidence += 0.7;
       reasons.push('Name contains "shimmer"');
+    } else if (name.includes('placeholder') && !name.includes('empty')) {
+      confidence += 0.5;
+      reasons.push('Name contains "placeholder"');
     }
 
     // Variant detection
     if (/shape\s*=\s*(rectangle|circle|text)/i.test(name)) {
-      confidence += 0.2;
+      confidence += 0.3;
       reasons.push('Has Shape variant (skeleton type)');
     }
 
-    if (/animated\s*=\s*(yes|no)/i.test(name)) {
-      confidence += 0.15;
+    if (/animated\s*=\s*(yes|no|true|false)/i.test(name)) {
+      confidence += 0.2;
       reasons.push('Has Animated variant');
+    }
+
+    // NEGATIVE signals - reduce confidence if it looks like Tooltip or HoverCard
+    if (node.children) {
+      // Check for arrow/pointer (Tooltip has this, Skeleton doesn't)
+      const hasArrow = node.children.some(child => {
+        const childName = child.name.toLowerCase();
+        return childName.includes('arrow') || childName.includes('pointer');
+      });
+
+      if (hasArrow) {
+        confidence -= 0.4;
+        reasons.push('NEGATIVE: Has arrow/pointer (not skeleton)');
+      }
+
+      // Check for actual text content (Tooltip has text, Skeleton is placeholder)
+      const hasTextContent = node.children.some(child => {
+        const childName = child.name.toLowerCase();
+        return child.type === 'TEXT' &&
+               !childName.includes('placeholder') &&
+               !childName.includes('skeleton');
+      });
+
+      if (hasTextContent) {
+        confidence -= 0.3;
+        reasons.push('NEGATIVE: Contains text content (not skeleton)');
+      }
     }
 
     // Structural detection - simple geometric shapes
@@ -3404,7 +3510,7 @@ export class ComponentClassifier {
       });
 
       if (rectangularChildren.length >= 2) {
-        confidence += 0.3;
+        confidence += 0.35;
         reasons.push('Contains multiple placeholder shapes');
       }
 
@@ -3413,27 +3519,29 @@ export class ComponentClassifier {
         const childName = child.name.toLowerCase();
         return childName.includes('gradient') ||
                childName.includes('shimmer') ||
-               childName.includes('shine');
+               childName.includes('shine') ||
+               childName.includes('effect');
       });
 
       if (hasGradient) {
-        confidence += 0.25;
+        confidence += 0.3;
         reasons.push('Contains gradient/shimmer effect');
       }
     }
 
-    // Typical skeleton colors (grays, muted)
+    // Typical skeleton colors (grays, muted) - broader range
     const hasSkeletonColors = node.fills && node.fills.some(fill => {
       if (fill.type === 'SOLID' && fill.color) {
         const gray = fill.color.r === fill.color.g && fill.color.g === fill.color.b;
-        const lightValue = fill.color.r > 0.8; // Light gray
-        return gray && lightValue;
+        const lightness = fill.color.r;
+        // Skeleton grays are typically between 0.8 and 0.95 (light gray)
+        return gray && lightness >= 0.8 && lightness <= 0.95;
       }
       return false;
     });
 
     if (hasSkeletonColors) {
-      confidence += 0.2;
+      confidence += 0.25;
       reasons.push('Has skeleton-typical colors (light gray)');
     }
 
@@ -3458,31 +3566,53 @@ export class ComponentClassifier {
     const reasons: string[] = [];
     let confidence = 0;
 
-    // Name-based detection
+    // Name-based detection (strengthened)
     if (name.includes('progress')) {
       confidence += 0.9;
       reasons.push('Name contains "progress"');
     } else if (name.includes('progressbar') || name.includes('progress bar')) {
       confidence += 0.95;
       reasons.push('Name contains "progress bar"');
-    } else if (name.includes('loading') && name.includes('bar')) {
-      confidence += 0.6;
-      reasons.push('Name suggests loading bar');
+    } else if (name.includes('loading') && (name.includes('bar') || name.includes('indicator'))) {
+      confidence += 0.7;
+      reasons.push('Name suggests loading bar/indicator');
+    }
+
+    // NEGATIVE signals - reduce confidence if it looks like Chart
+    if (node.children) {
+      // Check for chart-specific elements that Progress doesn't have
+      const hasChartElements = node.children.some(child => {
+        const childName = child.name.toLowerCase();
+        return childName.includes('axis') ||
+               childName.includes('legend') ||
+               childName.includes('grid') ||
+               childName.includes('data point') ||
+               childName.includes('series') ||
+               (childName.includes('x-') || childName.includes('y-'));
+      });
+
+      if (hasChartElements) {
+        confidence -= 0.5;
+        reasons.push('NEGATIVE: Contains chart-specific elements (not progress)');
+      }
     }
 
     // Variant detection
     if (/type\s*=\s*(linear|circular|radial)/i.test(name)) {
-      confidence += 0.2;
-      reasons.push('Has Type variant (progress type)');
+      // Only boost if it's progress type, not chart type
+      if (!name.includes('chart')) {
+        confidence += 0.25;
+        reasons.push('Has Type variant (progress type)');
+      }
     }
 
     if (/value\s*=\s*\d+/i.test(name)) {
-      confidence += 0.15;
+      confidence += 0.2;
       reasons.push('Has Value variant (progress value)');
     }
 
-    if (/indeterminate\s*=\s*(yes|no)/i.test(name)) {
-      confidence += 0.15;
+    if (/indeterminate\s*=\s*(yes|no|true|false)/i.test(name)) {
+      confidence += 0.2;
       reasons.push('Has Indeterminate variant');
     }
 
@@ -3496,20 +3626,20 @@ export class ComponentClassifier {
                childName.includes('rail');
       });
 
-      // Look for fill/indicator bar
+      // Look for fill/indicator bar (but not chart bars)
       const hasFill = node.children.some(child => {
         const childName = child.name.toLowerCase();
-        return childName.includes('fill') ||
+        return (childName.includes('fill') ||
                childName.includes('indicator') ||
-               childName.includes('bar') ||
-               childName.includes('value');
+               childName.includes('value')) &&
+               !childName.includes('chart');
       });
 
       if (hasTrack && hasFill) {
-        confidence += 0.4;
+        confidence += 0.45;
         reasons.push('Contains track and fill elements');
       } else if (hasTrack || hasFill) {
-        confidence += 0.2;
+        confidence += 0.25;
         reasons.push('Contains progress bar element');
       }
 
@@ -3517,32 +3647,32 @@ export class ComponentClassifier {
       const isCircular = node.children.some(child => {
         const childName = child.name.toLowerCase();
         return (childName.includes('circle') || childName.includes('ring')) &&
-               (childName.includes('progress') || childName.includes('indicator'));
+               (childName.includes('progress') || childName.includes('indicator') || childName.includes('track'));
       });
 
       if (isCircular) {
-        confidence += 0.3;
+        confidence += 0.35;
         reasons.push('Circular progress structure');
       }
     }
 
-    // Linear progress bar shape (wide and short)
+    // Linear progress bar shape (wide and short) - stronger signal
     if (node.size && node.size.x > node.size.y * 3 && node.size.y < 50) {
-      confidence += 0.3;
+      confidence += 0.35;
       reasons.push('Wide horizontal bar shape (linear progress)');
     }
 
     // Circular progress shape (square with high corner radius)
     if (node.size && Math.abs(node.size.x - node.size.y) < 10 &&
         node.cornerRadius && node.cornerRadius >= node.size.x / 2) {
-      confidence += 0.3;
+      confidence += 0.35;
       reasons.push('Circular shape (circular progress)');
     }
 
     // Has corner radius (progress bars are typically rounded)
     if (node.cornerRadius && node.cornerRadius > 0 &&
         node.size && node.size.x > node.size.y * 2) {
-      confidence += 0.1;
+      confidence += 0.15;
       reasons.push('Rounded progress bar');
     }
 
@@ -3562,27 +3692,56 @@ export class ComponentClassifier {
     const reasons: string[] = [];
     let confidence = 0;
 
-    // Name-based detection
-    if (name.includes('empty')) {
-      confidence += 0.8;
-      reasons.push('Name contains "empty"');
-    } else if (name.includes('no data') || name.includes('no-data')) {
-      confidence += 0.7;
-      reasons.push('Name suggests no data state');
-    } else if (name.includes('empty state') || name.includes('empty-state')) {
-      confidence += 0.9;
+    // Name-based detection (strengthened)
+    if (name.includes('empty state') || name.includes('empty-state')) {
+      confidence += 0.95;
       reasons.push('Name contains "empty state"');
+    } else if (name.includes('empty')) {
+      confidence += 0.85;
+      reasons.push('Name contains "empty"');
+    } else if (name.includes('no data') || name.includes('no-data') || name.includes('nodata')) {
+      confidence += 0.8;
+      reasons.push('Name suggests no data state');
+    } else if (name.includes('zero state') || name.includes('zero-state')) {
+      confidence += 0.85;
+      reasons.push('Name suggests zero state');
+    } else if (name.includes('blank slate') || name.includes('blank-slate')) {
+      confidence += 0.85;
+      reasons.push('Name suggests blank slate');
     } else if (name.includes('placeholder') && !name.includes('loading')) {
       confidence += 0.5;
       reasons.push('Name suggests placeholder state');
-    } else if (name.includes('zero state') || name.includes('blank slate')) {
-      confidence += 0.7;
-      reasons.push('Name suggests zero/blank state');
+    }
+
+    // NEGATIVE signals - reduce confidence if it looks like HoverCard
+    if (node.children) {
+      // HoverCards have triggers or arrows, Empty states don't
+      const hasTriggerOrArrow = node.children.some(child => {
+        const childName = child.name.toLowerCase();
+        return childName.includes('trigger') ||
+               childName.includes('arrow') ||
+               childName.includes('pointer');
+      });
+
+      if (hasTriggerOrArrow) {
+        confidence -= 0.4;
+        reasons.push('NEGATIVE: Has trigger/arrow (not empty state)');
+      }
+
+      // Check for HoverCard-specific naming patterns
+      const hasHoverCardPattern = name.includes('hover') ||
+                                  name.includes('popover') ||
+                                  name.includes('card');
+
+      if (hasHoverCardPattern && !name.includes('empty')) {
+        confidence -= 0.3;
+        reasons.push('NEGATIVE: Has hover/popover/card pattern (not empty state)');
+      }
     }
 
     // Structural detection
     if (node.children) {
-      // Look for icon (typically large, centered)
+      // Look for icon (typically large, centered) - stronger signal for empty states
       const hasIcon = node.children.some(child => {
         const childName = child.name.toLowerCase();
         return childName.includes('icon') ||
@@ -3592,7 +3751,7 @@ export class ComponentClassifier {
       });
 
       if (hasIcon) {
-        confidence += 0.3;
+        confidence += 0.35;
         reasons.push('Contains icon/illustration');
       }
 
@@ -3606,7 +3765,7 @@ export class ComponentClassifier {
       });
 
       if (hasTitle) {
-        confidence += 0.25;
+        confidence += 0.3;
         reasons.push('Contains title/heading text');
       }
 
@@ -3620,36 +3779,42 @@ export class ComponentClassifier {
       });
 
       if (hasDescription) {
-        confidence += 0.2;
+        confidence += 0.25;
         reasons.push('Contains description text');
       }
 
-      // Look for action button (optional)
+      // Look for action button (optional but common in empty states)
       const hasButton = node.children.some(child => {
         const childName = child.name.toLowerCase();
-        return childName.includes('button') || childName.includes('action');
+        return childName.includes('button') || childName.includes('action') || childName.includes('cta');
       });
 
       if (hasButton) {
-        confidence += 0.15;
+        confidence += 0.2;
         reasons.push('Contains action button');
       }
 
-      // Centered vertical layout (typical empty state)
+      // Centered vertical layout (typical empty state pattern) - stronger signal
       if (node.layoutMode === 'VERTICAL' && node.children.length >= 2) {
         const centerAligned = node.primaryAxisAlignItems === 'CENTER' ||
                              node.counterAxisAlignItems === 'CENTER';
         if (centerAligned) {
-          confidence += 0.2;
+          confidence += 0.25;
           reasons.push('Centered vertical layout (empty state pattern)');
         }
       }
     }
 
-    // Medium to large size (empty states fill their container)
+    // Medium to large size (empty states fill their container, larger than HoverCard)
     if (node.size && node.size.x > 200 && node.size.y > 150) {
-      confidence += 0.1;
+      confidence += 0.15;
       reasons.push('Size appropriate for empty state display');
+    }
+
+    // Empty states are typically larger than hover cards
+    if (node.size && (node.size.x > 350 || node.size.y > 250)) {
+      confidence += 0.1;
+      reasons.push('Large size (typical for empty state)');
     }
 
     return {

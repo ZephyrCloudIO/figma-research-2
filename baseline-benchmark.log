@@ -70,3 +70,693 @@
 [WARN] Could not parse score from output, defaulting to 0
 [DEBUG] Executing: figma-research/ai-integration-costs/L2-directed with gpt-4o
 [DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-costs --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-costs/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-costs --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=                                                 ] 3% (4/129) - figma-research/ai-integration-performance/L0-minimal[DEBUG] Executing: figma-research/ai-integration-performance/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-performance --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-performance/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-performance --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-costs/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-costs --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==                                                ] 4% (5/129) - figma-research/ai-integration-performance/L1-basic[DEBUG] Executing: figma-research/ai-integration-performance/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-performance --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-performance/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-performance --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-costs/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-costs --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==                                                ] 5% (6/129) - figma-research/ai-integration-performance/L2-directed[DEBUG] Executing: figma-research/ai-integration-performance/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-performance --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-performance/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-performance --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-performance/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-performance --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==                                                ] 5% (7/129) - figma-research/ai-integration-prompts/L0-minimal[DEBUG] Executing: figma-research/ai-integration-prompts/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-prompts --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-prompts/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-prompts --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-performance/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-performance --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===                                               ] 6% (8/129) - figma-research/ai-integration-prompts/L1-basic[DEBUG] Executing: figma-research/ai-integration-prompts/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-prompts --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-prompts/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-prompts --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-prompts/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-prompts --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===                                               ] 7% (9/129) - figma-research/ai-integration-prompts/L2-directed[DEBUG] Executing: figma-research/ai-integration-prompts/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-prompts --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-prompts/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-prompts --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-performance/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-performance --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[====                                              ] 8% (10/129) - figma-research/ai-integration-reliability/L0-minimal[DEBUG] Executing: figma-research/ai-integration-reliability/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-reliability --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-reliability/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-reliability --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-prompts/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-prompts --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[====                                              ] 9% (11/129) - figma-research/ai-integration-reliability/L1-basic[DEBUG] Executing: figma-research/ai-integration-reliability/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-reliability --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-reliability/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-reliability --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-prompts/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-prompts --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[====                                              ] 9% (12/129) - figma-research/ai-integration-reliability/L2-directed[DEBUG] Executing: figma-research/ai-integration-reliability/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-reliability --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-reliability/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-reliability --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-reliability/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-reliability --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=====                                             ] 10% (13/129) - figma-research/ai-integration-selection/L0-minimal[DEBUG] Executing: figma-research/ai-integration-selection/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-selection --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-selection/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-selection --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-reliability/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-reliability --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=====                                             ] 11% (14/129) - figma-research/ai-integration-selection/L1-basic[DEBUG] Executing: figma-research/ai-integration-selection/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-selection --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-selection/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-selection --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-selection/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-selection --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[======                                            ] 12% (15/129) - figma-research/ai-integration-selection/L2-directed[DEBUG] Executing: figma-research/ai-integration-selection/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-selection --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/ai-integration-selection/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-selection --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-selection/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-selection --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[======                                            ] 12% (16/129) - figma-research/classification-detection/L0-minimal[DEBUG] Executing: figma-research/classification-detection/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-detection --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-detection/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-detection --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-detection/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-detection --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[======                                            ] 13% (17/129) - figma-research/classification-detection/L1-basic[DEBUG] Executing: figma-research/classification-detection/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-detection --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-detection/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-detection --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-selection/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-selection --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=======                                           ] 14% (18/129) - figma-research/classification-detection/L2-directed[DEBUG] Executing: figma-research/classification-detection/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-detection --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-detection/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-detection --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-detection/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-detection --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=======                                           ] 15% (19/129) - figma-research/classification-inventory/L0-minimal[DEBUG] Executing: figma-research/classification-inventory/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-inventory --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-inventory/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-inventory --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/ai-integration-reliability/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research ai-integration-reliability --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[========                                          ] 16% (20/129) - figma-research/classification-inventory/L1-basic[DEBUG] Executing: figma-research/classification-inventory/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-inventory --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-inventory/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-inventory --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-inventory/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-inventory --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[========                                          ] 16% (21/129) - figma-research/classification-inventory/L2-directed[DEBUG] Executing: figma-research/classification-inventory/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-inventory --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-inventory/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-inventory --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-inventory/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-inventory --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[========                                          ] 17% (22/129) - figma-research/classification-properties/L0-minimal[DEBUG] Executing: figma-research/classification-properties/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-properties --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-properties/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-properties --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-detection/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-detection --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=========                                         ] 18% (23/129) - figma-research/classification-properties/L1-basic[DEBUG] Executing: figma-research/classification-properties/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-properties --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-properties/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-properties --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-properties/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-properties --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=========                                         ] 19% (24/129) - figma-research/classification-properties/L2-directed[DEBUG] Executing: figma-research/classification-properties/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-properties --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-properties/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-properties --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-properties/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-properties --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=========                                         ] 19% (25/129) - figma-research/classification-semantic/L0-minimal[DEBUG] Executing: figma-research/classification-semantic/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-semantic --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-semantic/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-semantic --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-inventory/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-inventory --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==========                                        ] 20% (26/129) - figma-research/classification-semantic/L1-basic[DEBUG] Executing: figma-research/classification-semantic/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-semantic --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-semantic/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-semantic --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-properties/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-properties --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==========                                        ] 21% (27/129) - figma-research/classification-semantic/L2-directed[DEBUG] Executing: figma-research/classification-semantic/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-semantic --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-semantic/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-semantic --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-semantic/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-semantic --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===========                                       ] 22% (28/129) - figma-research/classification-variants/L0-minimal[DEBUG] Executing: figma-research/classification-variants/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-variants --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-variants/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-variants --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-semantic/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-semantic --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===========                                       ] 22% (29/129) - figma-research/classification-variants/L1-basic[DEBUG] Executing: figma-research/classification-variants/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-variants --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-variants/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-variants --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-variants/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-variants --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===========                                       ] 23% (30/129) - figma-research/classification-variants/L2-directed[DEBUG] Executing: figma-research/classification-variants/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-variants --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/classification-variants/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-variants --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-semantic/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-semantic --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[============                                      ] 24% (31/129) - figma-research/code-generation-accessibility/L0-minimal[DEBUG] Executing: figma-research/code-generation-accessibility/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accessibility --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-accessibility/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accessibility --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-variants/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-variants --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[============                                      ] 25% (32/129) - figma-research/code-generation-accessibility/L1-basic[DEBUG] Executing: figma-research/code-generation-accessibility/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accessibility --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-accessibility/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accessibility --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/classification-variants/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research classification-variants --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=============                                     ] 26% (33/129) - figma-research/code-generation-accessibility/L2-directed[DEBUG] Executing: figma-research/code-generation-accessibility/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accessibility --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-accessibility/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accessibility --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-accessibility/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accessibility --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=============                                     ] 26% (34/129) - figma-research/code-generation-accuracy/L0-minimal[DEBUG] Executing: figma-research/code-generation-accuracy/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accuracy --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-accuracy/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accuracy --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-accessibility/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accessibility --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=============                                     ] 27% (35/129) - figma-research/code-generation-accuracy/L1-basic[DEBUG] Executing: figma-research/code-generation-accuracy/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accuracy --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-accuracy/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accuracy --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-accessibility/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accessibility --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==============                                    ] 28% (36/129) - figma-research/code-generation-accuracy/L2-directed[DEBUG] Executing: figma-research/code-generation-accuracy/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accuracy --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-accuracy/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accuracy --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-accuracy/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accuracy --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==============                                    ] 29% (37/129) - figma-research/code-generation-latency/L0-minimal[DEBUG] Executing: figma-research/code-generation-latency/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-latency --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-latency/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-latency --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-latency/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-latency --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==============                                    ] 29% (38/129) - figma-research/code-generation-latency/L1-basic[DEBUG] Executing: figma-research/code-generation-latency/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-latency --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-latency/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-latency --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-latency/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-latency --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===============                                   ] 30% (39/129) - figma-research/code-generation-latency/L2-directed[DEBUG] Executing: figma-research/code-generation-latency/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-latency --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-latency/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-latency --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-accuracy/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accuracy --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===============                                   ] 31% (40/129) - figma-research/code-generation-semantic/L0-minimal[DEBUG] Executing: figma-research/code-generation-semantic/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-semantic --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-semantic/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-semantic --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-latency/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-latency --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[================                                  ] 32% (41/129) - figma-research/code-generation-semantic/L1-basic[DEBUG] Executing: figma-research/code-generation-semantic/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-semantic --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-semantic/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-semantic --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-semantic/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-semantic --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[================                                  ] 33% (42/129) - figma-research/code-generation-semantic/L2-directed[DEBUG] Executing: figma-research/code-generation-semantic/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-semantic --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-semantic/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-semantic --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-accuracy/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-accuracy --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[================                                  ] 33% (43/129) - figma-research/code-generation-types/L0-minimal[DEBUG] Executing: figma-research/code-generation-types/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-types --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-types/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-types --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-semantic/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-semantic --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=================                                 ] 34% (44/129) - figma-research/code-generation-types/L1-basic[DEBUG] Executing: figma-research/code-generation-types/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-types --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-types/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-types --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-types/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-types --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=================                                 ] 35% (45/129) - figma-research/code-generation-types/L2-directed[DEBUG] Executing: figma-research/code-generation-types/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-types --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/code-generation-types/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-types --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-types/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-types --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==================                                ] 36% (46/129) - figma-research/figma-api-caching/L0-minimal[DEBUG] Executing: figma-research/figma-api-caching/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-caching --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-caching/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-caching --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-semantic/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-semantic --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==================                                ] 36% (47/129) - figma-research/figma-api-caching/L1-basic[DEBUG] Executing: figma-research/figma-api-caching/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-caching --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-caching/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-caching --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-caching/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-caching --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==================                                ] 37% (48/129) - figma-research/figma-api-caching/L2-directed[DEBUG] Executing: figma-research/figma-api-caching/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-caching --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-caching/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-caching --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/code-generation-types/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research code-generation-types --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===================                               ] 38% (49/129) - figma-research/figma-api-latency/L0-minimal[DEBUG] Executing: figma-research/figma-api-latency/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-latency --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-latency/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-latency --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-caching/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-caching --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===================                               ] 39% (50/129) - figma-research/figma-api-latency/L1-basic[DEBUG] Executing: figma-research/figma-api-latency/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-latency --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-latency/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-latency --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-latency/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-latency --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[====================                              ] 40% (51/129) - figma-research/figma-api-latency/L2-directed[DEBUG] Executing: figma-research/figma-api-latency/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-latency --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-latency/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-latency --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-latency/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-latency --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[====================                              ] 40% (52/129) - figma-research/figma-api-node-extraction/L0-minimal[DEBUG] Executing: figma-research/figma-api-node-extraction/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-node-extraction --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-node-extraction/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-node-extraction --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-latency/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-latency --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[====================                              ] 41% (53/129) - figma-research/figma-api-node-extraction/L1-basic[DEBUG] Executing: figma-research/figma-api-node-extraction/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-node-extraction --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-node-extraction/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-node-extraction --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-node-extraction/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-node-extraction --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=====================                             ] 42% (54/129) - figma-research/figma-api-node-extraction/L2-directed[DEBUG] Executing: figma-research/figma-api-node-extraction/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-node-extraction --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-node-extraction/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-node-extraction --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-node-extraction/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-node-extraction --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=====================                             ] 43% (55/129) - figma-research/figma-api-rate-limiting/L0-minimal[DEBUG] Executing: figma-research/figma-api-rate-limiting/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-rate-limiting --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-rate-limiting/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-rate-limiting --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-node-extraction/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-node-extraction --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=====================                             ] 43% (56/129) - figma-research/figma-api-rate-limiting/L1-basic[DEBUG] Executing: figma-research/figma-api-rate-limiting/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-rate-limiting --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-rate-limiting/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-rate-limiting --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-rate-limiting/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-rate-limiting --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[======================                            ] 44% (57/129) - figma-research/figma-api-rate-limiting/L2-directed[DEBUG] Executing: figma-research/figma-api-rate-limiting/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-rate-limiting --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-rate-limiting/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-rate-limiting --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-rate-limiting/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-rate-limiting --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[======================                            ] 45% (58/129) - figma-research/figma-api-url-parsing/L0-minimal[DEBUG] Executing: figma-research/figma-api-url-parsing/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-url-parsing --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-url-parsing/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-url-parsing --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-url-parsing/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-url-parsing --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=======================                           ] 46% (59/129) - figma-research/figma-api-url-parsing/L1-basic[DEBUG] Executing: figma-research/figma-api-url-parsing/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-url-parsing --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-url-parsing/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-url-parsing --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-caching/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-caching --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[WARN] Could not parse score from output, defaulting to 0
+[=======================                           ] 47% (60/129) - figma-research/figma-api-url-parsing/L2-directed[DEBUG] Executing: figma-research/figma-api-url-parsing/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-url-parsing --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/figma-api-url-parsing/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-url-parsing --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-url-parsing/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-url-parsing --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=======================                           ] 47% (61/129) - figma-research/migration/L0-minimal[DEBUG] Executing: figma-research/migration/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research migration --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/migration/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research migration --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/migration/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research migration --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[========================                          ] 48% (62/129) - figma-research/migration/L1-basic[DEBUG] Executing: figma-research/migration/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research migration --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/migration/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research migration --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-url-parsing/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-url-parsing --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[========================                          ] 49% (63/129) - figma-research/migration/L2-directed[DEBUG] Executing: figma-research/migration/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research migration --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/migration/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research migration --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/figma-api-rate-limiting/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research figma-api-rate-limiting --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=========================                         ] 50% (64/129) - figma-research/optimization/L0-minimal[DEBUG] Executing: figma-research/optimization/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research optimization --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/optimization/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research optimization --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/migration/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research migration --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=========================                         ] 50% (65/129) - figma-research/optimization/L1-basic[DEBUG] Executing: figma-research/optimization/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research optimization --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/optimization/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research optimization --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/optimization/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research optimization --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=========================                         ] 51% (66/129) - figma-research/optimization/L2-directed[DEBUG] Executing: figma-research/optimization/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research optimization --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/optimization/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research optimization --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/migration/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research migration --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==========================                        ] 52% (67/129) - figma-research/orchestration-coordination/L0-minimal[DEBUG] Executing: figma-research/orchestration-coordination/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-coordination --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-coordination/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-coordination --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/optimization/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research optimization --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==========================                        ] 53% (68/129) - figma-research/orchestration-coordination/L1-basic[DEBUG] Executing: figma-research/orchestration-coordination/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-coordination --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-coordination/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-coordination --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-coordination/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-coordination --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==========================                        ] 53% (69/129) - figma-research/orchestration-coordination/L2-directed[DEBUG] Executing: figma-research/orchestration-coordination/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-coordination --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-coordination/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-coordination --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/optimization/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research optimization --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===========================                       ] 54% (70/129) - figma-research/orchestration-errors/L0-minimal[DEBUG] Executing: figma-research/orchestration-errors/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-errors --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-errors/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-errors --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-coordination/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-coordination --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===========================                       ] 55% (71/129) - figma-research/orchestration-errors/L1-basic[DEBUG] Executing: figma-research/orchestration-errors/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-errors --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-errors/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-errors --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-errors/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-errors --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[============================                      ] 56% (72/129) - figma-research/orchestration-errors/L2-directed[DEBUG] Executing: figma-research/orchestration-errors/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-errors --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-errors/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-errors --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-coordination/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-coordination --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[============================                      ] 57% (73/129) - figma-research/orchestration-iterations/L0-minimal[DEBUG] Executing: figma-research/orchestration-iterations/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-iterations --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-iterations/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-iterations --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-errors/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-errors --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[============================                      ] 57% (74/129) - figma-research/orchestration-iterations/L1-basic[DEBUG] Executing: figma-research/orchestration-iterations/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-iterations --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-iterations/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-iterations --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-iterations/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-iterations --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=============================                     ] 58% (75/129) - figma-research/orchestration-iterations/L2-directed[DEBUG] Executing: figma-research/orchestration-iterations/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-iterations --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-iterations/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-iterations --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-iterations/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-iterations --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=============================                     ] 59% (76/129) - figma-research/orchestration-metrics/L0-minimal[DEBUG] Executing: figma-research/orchestration-metrics/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-metrics --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-metrics/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-metrics --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-metrics/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-metrics --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==============================                    ] 60% (77/129) - figma-research/orchestration-metrics/L1-basic[DEBUG] Executing: figma-research/orchestration-metrics/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-metrics --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-metrics/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-metrics --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-iterations/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-iterations --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==============================                    ] 60% (78/129) - figma-research/orchestration-metrics/L2-directed[DEBUG] Executing: figma-research/orchestration-metrics/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-metrics --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-metrics/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-metrics --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-metrics/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-metrics --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==============================                    ] 61% (79/129) - figma-research/orchestration-performance/L0-minimal[DEBUG] Executing: figma-research/orchestration-performance/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-performance --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-performance/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-performance --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-errors/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-errors --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===============================                   ] 62% (80/129) - figma-research/orchestration-performance/L1-basic[DEBUG] Executing: figma-research/orchestration-performance/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-performance --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-performance/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-performance --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-metrics/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-metrics --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[===============================                   ] 63% (81/129) - figma-research/orchestration-performance/L2-directed[DEBUG] Executing: figma-research/orchestration-performance/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-performance --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/orchestration-performance/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-performance --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-performance/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-performance --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[================================                  ] 64% (82/129) - figma-research/performance-bottlenecks/L0-minimal[DEBUG] Executing: figma-research/performance-bottlenecks/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-bottlenecks --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/performance-bottlenecks/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-bottlenecks --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-performance/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-performance --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[================================                  ] 64% (83/129) - figma-research/performance-bottlenecks/L1-basic[DEBUG] Executing: figma-research/performance-bottlenecks/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-bottlenecks --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/performance-bottlenecks/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-bottlenecks --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/performance-bottlenecks/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-bottlenecks --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[================================                  ] 65% (84/129) - figma-research/performance-bottlenecks/L2-directed[DEBUG] Executing: figma-research/performance-bottlenecks/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-bottlenecks --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/performance-bottlenecks/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-bottlenecks --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/orchestration-performance/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research orchestration-performance --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=================================                 ] 66% (85/129) - figma-research/performance-cache-hits/L0-minimal[DEBUG] Executing: figma-research/performance-cache-hits/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-cache-hits --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/performance-cache-hits/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-cache-hits --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/performance-cache-hits/L0-minimal with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-cache-hits --tier L0-minimal --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=================================                 ] 67% (86/129) - figma-research/performance-cache-hits/L1-basic[DEBUG] Executing: figma-research/performance-cache-hits/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-cache-hits --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/performance-cache-hits/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-cache-hits --tier L1-basic --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/performance-bottlenecks/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-bottlenecks --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[=================================                 ] 67% (87/129) - figma-research/performance-cache-hits/L2-directed[DEBUG] Executing: figma-research/performance-cache-hits/L2-directed with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-cache-hits --tier L2-directed --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/performance-cache-hits/L2-directed with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-cache-hits --tier L2-directed --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/performance-cache-hits/L1-basic with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-cache-hits --tier L1-basic --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==================================                ] 68% (88/129) - figma-research/performance-costs/L0-minimal[DEBUG] Executing: figma-research/performance-costs/L0-minimal with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-costs --tier L0-minimal --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/performance-costs/L0-minimal with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-costs --tier L0-minimal --agent openrouter --model gpt-4o --no-json
+[DEBUG] Executing: figma-research/performance-cache-hits/L2-directed with claude-sonnet-3.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-cache-hits --tier L2-directed --agent anthropic --model claude-sonnet-3.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[==================================                ] 69% (89/129) - figma-research/performance-costs/L1-basic[DEBUG] Executing: figma-research/performance-costs/L1-basic with claude-sonnet-4.5
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-costs --tier L1-basic --agent anthropic --model claude-sonnet-4.5 --no-json
+[WARN] Could not parse score from output, defaulting to 0
+[DEBUG] Executing: figma-research/performance-costs/L1-basic with gpt-4o
+[DEBUG] Executing: tsx /Users/zackarychapple/code/figma-research-clean/reference-repos/ze-benchmarks/packages/harness/src/cli.ts figma-research performance-costs --tier L1-basic --agent openrouter --model gpt-4o --no-json

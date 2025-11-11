@@ -1,0 +1,42 @@
+// Quick Validation - Baseline (Good Prompts)
+{
+  "schema_version": "0.0.1",
+  "name": "@figma-research/quick-validation-baseline",
+  "displayName": "Quick Validation Baseline",
+  "version": "1.0.0",
+  "from": "@figma-research/base",
+  "license": "MIT",
+  "availability": "public",
+  "maintainers": [{"name": "Figma Research Team", "email": "research@figma-research.dev"}],
+  "persona": {
+    "purpose": "Quick validation with good prompts",
+    "values": ["Accuracy", "Performance"],
+    "attributes": ["Reliable", "Fast"],
+    "tech_stack": ["TypeScript", "Node.js"]
+  },
+  "capabilities": {
+    "tags": ["validation"],
+    "descriptions": {"validation": "Quick validation test"}
+  },
+  "dependencies": {
+    "available_tools": ["node", "npm"]
+  },
+  "preferred_models": [
+    {"model": "gpt-4o", "weight": 1.0}
+  ],
+  "benchmarks": {
+    "test_suites": [
+      {"name": "quick-validation", "path": "figma-research", "type": "accuracy"}
+    ]
+  },
+  "prompts": {
+    "default": {
+      "spawnerPrompt": "I'm a validation specialist with clear, detailed instructions."
+    },
+    "model_specific": {
+      "gpt-4o": {
+        "spawnerPrompt": "I'm the validation specialist. I excel at following detailed instructions, implementing features correctly, and ensuring high quality output. I pay attention to requirements and deliver precise, working solutions."
+      }
+    }
+  }
+}
