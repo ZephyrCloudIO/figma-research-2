@@ -1,0 +1,15 @@
+{
+  "codeGenerationModel": "anthropic/claude-sonnet-4.5",
+  "embeddingModel": "openai/text-embedding-3-small",
+  "visionModel": "openai/gpt-4o",
+  "databasePath": "./validation.db",
+  "outputDir": "./output",
+  "createSubdirectories": true,
+  "enableCaching": true,
+  "enableVisualValidation": false,
+  "enableSemanticMatching": true,
+  "maxRetries": 3,
+  "retryDelay": 1000,
+  "timeout": 60000,
+  "logLevel": "info"
+}

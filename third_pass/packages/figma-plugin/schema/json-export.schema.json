@@ -1,0 +1,214 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://zephyr.figma/schemas/json-export/v1.0.0",
+  "title": "Zephyr Figma JSON Export",
+  "description": "Schema for Figma node exports from Zephyr plugin",
+  "type": "object",
+  "required": ["version", "exportDate", "fileKey", "fileName", "nodeId", "nodeName", "node"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "JSON export format version (semver)"
+    },
+    "exportDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when export was created"
+    },
+    "editDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of last file modification (optional)"
+    },
+    "fileKey": {
+      "type": "string",
+      "description": "Figma file key"
+    },
+    "fileName": {
+      "type": "string",
+      "description": "Name of the Figma file"
+    },
+    "nodeId": {
+      "type": "string",
+      "description": "ID of the exported node"
+    },
+    "nodeName": {
+      "type": "string",
+      "description": "Name of the exported node"
+    },
+    "node": {
+      "$ref": "#/definitions/ExportedNode"
+    }
+  },
+  "definitions": {
+    "ExportedNode": {
+      "type": "object",
+      "required": ["id", "name", "type", "visible", "locked", "width", "height", "x", "y", "rotation"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "type": { "type": "string" },
+        "visible": { "type": "boolean" },
+        "locked": { "type": "boolean" },
+        "width": { "type": "number" },
+        "height": { "type": "number" },
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "rotation": { "type": "number" },
+        "opacity": { "type": "number", "minimum": 0, "maximum": 1 },
+        "blendMode": { "type": "string" },
+        "layoutMode": { "type": "string", "enum": ["NONE", "HORIZONTAL", "VERTICAL"] },
+        "layoutAlign": { "type": "string" },
+        "layoutGrow": { "type": "number" },
+        "primaryAxisSizingMode": { "type": "string" },
+        "counterAxisSizingMode": { "type": "string" },
+        "primaryAxisAlignItems": { "type": "string" },
+        "counterAxisAlignItems": { "type": "string" },
+        "paddingLeft": { "type": "number" },
+        "paddingRight": { "type": "number" },
+        "paddingTop": { "type": "number" },
+        "paddingBottom": { "type": "number" },
+        "itemSpacing": { "type": "number" },
+        "counterAxisSpacing": { "type": "number" },
+        "layoutWrap": { "type": "string" },
+        "fills": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Paint" }
+        },
+        "strokes": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Paint" }
+        },
+        "strokeWeight": { "type": "number" },
+        "strokeAlign": { "type": "string" },
+        "strokeCap": { "type": "string" },
+        "strokeJoin": { "type": "string" },
+        "dashPattern": {
+          "type": "array",
+          "items": { "type": "number" }
+        },
+        "cornerRadius": { "type": "number" },
+        "rectangleCornerRadii": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "effects": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Effect" }
+        },
+        "characters": { "type": "string" },
+        "fontSize": { "type": "number" },
+        "fontName": { "$ref": "#/definitions/FontName" },
+        "fontWeight": { "type": "number" },
+        "textAlignHorizontal": { "type": "string" },
+        "textAlignVertical": { "type": "string" },
+        "textAutoResize": { "type": "string" },
+        "textCase": { "type": "string" },
+        "textDecoration": { "type": "string" },
+        "letterSpacing": { "$ref": "#/definitions/LetterSpacing" },
+        "lineHeight": { "$ref": "#/definitions/LineHeight" },
+        "paragraphIndent": { "type": "number" },
+        "paragraphSpacing": { "type": "number" },
+        "componentId": { "type": "string" },
+        "componentProperties": { "type": "object" },
+        "mainComponent": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "key": { "type": "string" },
+            "name": { "type": "string" }
+          }
+        },
+        "constraints": {
+          "type": "object",
+          "properties": {
+            "horizontal": { "type": "string" },
+            "vertical": { "type": "string" }
+          }
+        },
+        "clipsContent": { "type": "boolean" },
+        "isMask": { "type": "boolean" },
+        "children": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/ExportedNode" }
+        }
+      }
+    },
+    "Paint": {
+      "type": "object",
+      "required": ["type", "visible"],
+      "properties": {
+        "type": { "type": "string" },
+        "visible": { "type": "boolean" },
+        "opacity": { "type": "number" },
+        "blendMode": { "type": "string" },
+        "color": { "$ref": "#/definitions/Color" },
+        "gradientStops": { "type": "array" },
+        "gradientTransform": { "type": "array" },
+        "scaleMode": { "type": "string" },
+        "imageHash": { "type": "string" },
+        "imageTransform": { "type": "array" },
+        "scalingFactor": { "type": "number" },
+        "rotation": { "type": "number" },
+        "filters": { "type": "object" }
+      }
+    },
+    "Color": {
+      "type": "object",
+      "required": ["r", "g", "b"],
+      "properties": {
+        "r": { "type": "number", "minimum": 0, "maximum": 1 },
+        "g": { "type": "number", "minimum": 0, "maximum": 1 },
+        "b": { "type": "number", "minimum": 0, "maximum": 1 },
+        "a": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "Effect": {
+      "type": "object",
+      "required": ["type", "visible", "radius"],
+      "properties": {
+        "type": { "type": "string" },
+        "visible": { "type": "boolean" },
+        "radius": { "type": "number" },
+        "blendMode": { "type": "string" },
+        "color": { "$ref": "#/definitions/Color" },
+        "offset": {
+          "type": "object",
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          }
+        },
+        "spread": { "type": "number" },
+        "showShadowBehindNode": { "type": "boolean" }
+      }
+    },
+    "FontName": {
+      "type": "object",
+      "required": ["family", "style"],
+      "properties": {
+        "family": { "type": "string" },
+        "style": { "type": "string" }
+      }
+    },
+    "LetterSpacing": {
+      "type": "object",
+      "required": ["value", "units"],
+      "properties": {
+        "value": { "type": "number" },
+        "units": { "type": "string" }
+      }
+    },
+    "LineHeight": {
+      "type": "object",
+      "required": ["value", "units"],
+      "properties": {
+        "value": { "type": "number" },
+        "units": { "type": "string" }
+      }
+    }
+  }
+}

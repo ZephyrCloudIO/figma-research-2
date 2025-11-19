@@ -1,0 +1,441 @@
+You are an expert React + TypeScript + ShadCN + Tailwind CSS developer. Generate a complete button documentation component that matches this Figma design EXACTLY.
+
+# Component: Button
+
+# Page Structure (MUST INCLUDE ALL SECTIONS)
+
+## 1. Header Section
+- Title: "Button"
+- Tagline: "Components"
+- Description: "Displays a button or a component that looks like a button."
+- Links: Developer docs, Designer docs
+
+## 2. Playground Section
+- Section Title: "Playground"
+- Theme Sections: Light and Dark
+- Total Buttons: 54
+
+## 3. Footer Section
+- Text: "© 2025 shadcndesign.com"
+- Links: Docs
+
+# Button Analysis
+Total Buttons: 54
+Variants Found: default, outline, ghost, secondary, link
+Icons Used: Send, ArrowRight
+
+# Detailed Button Specifications
+Button 1:
+  - Text: "Button"
+  - Variant: default
+  - Size: sm
+  - State: default
+
+Button 2:
+  - Text: "Outline"
+  - Variant: outline
+  - Size: sm
+  - State: default
+
+Button 3:
+  - Text: "Ghost"
+  - Variant: ghost
+  - Size: sm
+  - State: default
+
+Button 4:
+  - Text: "Desctructive"
+  - Variant: default
+  - Size: sm
+  - State: default
+
+Button 5:
+  - Text: "Secondary"
+  - Variant: secondary
+  - Size: sm
+  - State: default
+
+Button 6:
+  - Text: "Link"
+  - Variant: link
+  - Size: sm
+  - State: default
+
+Button 7:
+  - Text: "Send"
+  - Variant: default
+  - Size: sm
+  - State: default
+  - Left Icon: Send
+
+Button 8:
+  - Text: "Learn more"
+  - Variant: default
+  - Size: sm
+  - State: default
+  - Right Icon: ArrowRight
+
+Button 9:
+  - Text: "Please wait"
+  - Variant: default
+  - Size: sm
+  - State: disabled
+
+Button 10:
+  - Text: "Small"
+  - Variant: default
+  - Size: sm
+  - State: default
+
+Button 11:
+  - Text: "Outline"
+  - Variant: outline
+  - Size: sm
+  - State: default
+
+Button 12:
+  - Text: "Ghost"
+  - Variant: ghost
+  - Size: sm
+  - State: default
+
+Button 13:
+  - Text: "Desctructive"
+  - Variant: default
+  - Size: sm
+  - State: default
+
+Button 14:
+  - Text: "Secondary"
+  - Variant: secondary
+  - Size: sm
+  - State: default
+
+Button 15:
+  - Text: "Link"
+  - Variant: link
+  - Size: sm
+  - State: default
+
+Button 16:
+  - Text: "Send"
+  - Variant: default
+  - Size: sm
+  - State: default
+  - Left Icon: Send
+
+Button 17:
+  - Text: "Learn more"
+  - Variant: default
+  - Size: sm
+  - State: default
+  - Right Icon: ArrowRight
+
+Button 18:
+  - Text: "Please wait"
+  - Variant: default
+  - Size: sm
+  - State: disabled
+
+Button 19:
+  - Text: "Large"
+  - Variant: default
+  - Size: default
+  - State: default
+
+Button 20:
+  - Text: "Outline"
+  - Variant: outline
+  - Size: default
+  - State: default
+
+Button 21:
+  - Text: "Ghost"
+  - Variant: ghost
+  - Size: default
+  - State: default
+
+Button 22:
+  - Text: "Desctructive"
+  - Variant: default
+  - Size: default
+  - State: default
+
+Button 23:
+  - Text: "Secondary"
+  - Variant: secondary
+  - Size: default
+  - State: default
+
+Button 24:
+  - Text: "Link"
+  - Variant: link
+  - Size: default
+  - State: default
+
+Button 25:
+  - Text: "Send"
+  - Variant: default
+  - Size: default
+  - State: default
+  - Left Icon: Send
+
+Button 26:
+  - Text: "Learn more"
+  - Variant: default
+  - Size: default
+  - State: default
+  - Right Icon: ArrowRight
+
+Button 27:
+  - Text: "Please wait"
+  - Variant: default
+  - Size: default
+  - State: disabled
+
+Button 28:
+  - Text: "Button"
+  - Variant: default
+  - Size: sm
+  - State: default
+
+Button 29:
+  - Text: "Outline"
+  - Variant: outline
+  - Size: sm
+  - State: default
+
+Button 30:
+  - Text: "Ghost"
+  - Variant: ghost
+  - Size: sm
+  - State: default
+
+Button 31:
+  - Text: "Desctructive"
+  - Variant: default
+  - Size: sm
+  - State: default
+
+Button 32:
+  - Text: "Secondary"
+  - Variant: secondary
+  - Size: sm
+  - State: default
+
+Button 33:
+  - Text: "Link"
+  - Variant: link
+  - Size: sm
+  - State: default
+
+Button 34:
+  - Text: "Send"
+  - Variant: outline
+  - Size: sm
+  - State: default
+  - Left Icon: Send
+
+Button 35:
+  - Text: "Learn more"
+  - Variant: outline
+  - Size: sm
+  - State: default
+  - Right Icon: ArrowRight
+
+Button 36:
+  - Text: "Please wait"
+  - Variant: outline
+  - Size: sm
+  - State: disabled
+
+Button 37:
+  - Text: "Small"
+  - Variant: default
+  - Size: sm
+  - State: default
+
+Button 38:
+  - Text: "Outline"
+  - Variant: outline
+  - Size: sm
+  - State: default
+
+Button 39:
+  - Text: "Ghost"
+  - Variant: ghost
+  - Size: sm
+  - State: default
+
+Button 40:
+  - Text: "Desctructive"
+  - Variant: default
+  - Size: sm
+  - State: default
+
+Button 41:
+  - Text: "Secondary"
+  - Variant: secondary
+  - Size: sm
+  - State: default
+
+Button 42:
+  - Text: "Link"
+  - Variant: link
+  - Size: sm
+  - State: default
+
+Button 43:
+  - Text: "Send"
+  - Variant: outline
+  - Size: sm
+  - State: default
+  - Left Icon: Send
+
+Button 44:
+  - Text: "Learn more"
+  - Variant: outline
+  - Size: sm
+  - State: default
+  - Right Icon: ArrowRight
+
+Button 45:
+  - Text: "Please wait"
+  - Variant: outline
+  - Size: sm
+  - State: disabled
+
+Button 46:
+  - Text: "Large"
+  - Variant: default
+  - Size: default
+  - State: default
+
+Button 47:
+  - Text: "Outline"
+  - Variant: outline
+  - Size: default
+  - State: default
+
+Button 48:
+  - Text: "Ghost"
+  - Variant: ghost
+  - Size: default
+  - State: default
+
+Button 49:
+  - Text: "Desctructive"
+  - Variant: default
+  - Size: default
+  - State: default
+
+Button 50:
+  - Text: "Secondary"
+  - Variant: secondary
+  - Size: default
+  - State: default
+
+Button 51:
+  - Text: "Link"
+  - Variant: link
+  - Size: default
+  - State: default
+
+Button 52:
+  - Text: "Send"
+  - Variant: outline
+  - Size: default
+  - State: default
+  - Left Icon: Send
+
+Button 53:
+  - Text: "Learn more"
+  - Variant: outline
+  - Size: default
+  - State: default
+  - Right Icon: ArrowRight
+
+Button 54:
+  - Text: "Please wait"
+  - Variant: outline
+  - Size: default
+  - State: disabled
+
+# Required Imports
+```typescript
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import { Send, ArrowRight } from 'lucide-react';
+```
+
+# Component Requirements
+
+1. **Complete Page Structure**: Include ALL sections:
+   - Header with title, tagline, description, and links
+   - Playground section with title
+   - Light/Dark theme sections with buttons
+   - Footer with copyright and links
+
+2. **Exact Replication**: Generate ALL 54 buttons exactly as specified
+
+3. **Use ShadCN Button**: Import from '@/components/ui/button'
+
+4. **Correct Props**: Use the EXACT variant, size, and text for each button
+
+5. **Icon Placement**:
+   - Left icons use `className="mr-2 h-4 w-4"`
+   - Right icons use `className="ml-2 h-4 w-4"`
+
+6. **Layout Structure**:
+   - Header at top with title, tagline, description
+   - Playground section with title
+   - Light/Dark theme toggle or separate sections
+   - Footer at bottom
+   - Use proper spacing and containers
+
+7. **TypeScript**: Full TypeScript with proper types
+
+8. **Responsive**: Make it responsive and accessible
+
+# Button Examples (showing correct syntax)
+<Button variant="default" size="sm">
+  Button
+</Button>
+<Button variant="outline" size="sm">
+  Outline
+</Button>
+<Button variant="ghost" size="sm">
+  Ghost
+</Button>
+<Button variant="default" size="sm">
+  Desctructive
+</Button>
+<Button variant="secondary" size="sm">
+  Secondary
+</Button>
+<Button variant="link" size="sm">
+  Link
+</Button>
+<Button variant="default" size="sm">
+  <Send className="mr-2 h-4 w-4" />Send
+</Button>
+<Button variant="default" size="sm">
+  Learn more<ArrowRight className="ml-2 h-4 w-4" />
+</Button>
+<Button variant="default" size="sm">
+  Please wait
+</Button>
+<Button variant="default" size="sm">
+  Small
+</Button>
+
+# Output Instructions
+Generate ONLY the complete TypeScript React component code.
+- Include header, playground, and footer sections
+- Start with imports
+- No markdown code blocks
+- No explanations
+- Production-ready code with all 54 buttons
+- Match the EXACT structure from Figma
+
+Generate the component now:

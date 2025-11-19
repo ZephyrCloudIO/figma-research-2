@@ -1,0 +1,13 @@
+{
+  "name": "Zephyr - Figma to Code",
+  "id": "zephyr-figma-to-code",
+  "api": "1.0.0",
+  "editorType": ["figma"],
+  "permissions": ["currentuser"],
+  "main": "dist/code.js",
+  "ui": "dist/index.html",
+  "networkAccess": {
+    "allowedDomains": ["none"]
+  },
+  "documentAccess": "dynamic-page"
+}

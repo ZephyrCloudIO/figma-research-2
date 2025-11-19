@@ -1,0 +1,878 @@
+You are an expert React + TypeScript + ShadCN + Tailwind CSS developer. Generate a pixel-perfect React component based on this Figma design export.
+
+# Component Overview
+Name: Item
+Type: FRAME
+Dimensions: 0x0px
+
+# Layout Information
+Layout Mode: VERTICAL
+
+
+
+
+# Simplified Node Structure (token-optimized)
+{
+  "name": "Item",
+  "type": "FRAME",
+  "visible": true,
+  "layout": {
+    "mode": "VERTICAL",
+    "spacing": 0,
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "primaryAlign": "MIN",
+    "counterAlign": "CENTER"
+  },
+  "fills": [
+    {
+      "type": "SOLID",
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "opacity": 1
+    }
+  ],
+  "children": [
+    {
+      "name": "Container",
+      "type": "FRAME",
+      "visible": true,
+      "layout": {
+        "mode": "VERTICAL",
+        "spacing": 64,
+        "padding": {
+          "top": 128,
+          "right": 0,
+          "bottom": 128,
+          "left": 0
+        },
+        "primaryAlign": "MIN",
+        "counterAlign": "CENTER"
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "opacity": 1
+        }
+      ],
+      "children": [
+        {
+          "name": "_Docs / Header",
+          "type": "INSTANCE",
+          "visible": true,
+          "layout": {
+            "mode": "HORIZONTAL",
+            "spacing": 64,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "primaryAlign": "CENTER",
+            "counterAlign": "MIN"
+          },
+          "children": [
+            {
+              "name": "Page Title",
+              "type": "FRAME",
+              "visible": true,
+              "layout": {
+                "mode": "VERTICAL",
+                "spacing": 8,
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "primaryAlign": "MIN",
+                "counterAlign": "MIN"
+              },
+              "children": [
+                {
+                  "name": "Title",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layout": {
+                    "mode": "HORIZONTAL",
+                    "spacing": 0,
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "primaryAlign": "CENTER",
+                    "counterAlign": "MIN"
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "opacity": 1
+                    }
+                  ],
+                  "strokes": {
+                    "colors": [
+                      {
+                        "r": 0.8980392217636108,
+                        "g": 0.8980392217636108,
+                        "b": 0.8980392217636108
+                      }
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "Wrapper",
+                      "type": "FRAME",
+                      "visible": true,
+                      "layout": {
+                        "mode": "HORIZONTAL",
+                        "spacing": 8,
+                        "padding": {
+                          "top": 16,
+                          "right": 16,
+                          "bottom": 16,
+                          "left": 16
+                        },
+                        "primaryAlign": "CENTER",
+                        "counterAlign": "CENTER"
+                      },
+                      "children": [
+                        {
+                          "name": "Typography",
+                          "type": "TEXT",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Docs Link - Developer",
+                          "type": "FRAME",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Docs Link - Designer",
+                          "type": "FRAME",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Components",
+                          "type": "TEXT",
+                          "truncated": true
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Description",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layout": {
+                    "mode": "HORIZONTAL",
+                    "spacing": 0,
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "primaryAlign": "CENTER",
+                    "counterAlign": "MIN"
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "opacity": 1
+                    }
+                  ],
+                  "strokes": {
+                    "colors": [
+                      {
+                        "r": 0.8980392217636108,
+                        "g": 0.8980392217636108,
+                        "b": 0.8980392217636108
+                      }
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "Wrapper",
+                      "type": "FRAME",
+                      "visible": true,
+                      "layout": {
+                        "mode": "HORIZONTAL",
+                        "spacing": 8,
+                        "padding": {
+                          "top": 16,
+                          "right": 16,
+                          "bottom": 16,
+                          "left": 16
+                        },
+                        "primaryAlign": "MIN",
+                        "counterAlign": "MIN"
+                      },
+                      "children": [
+                        {
+                          "name": "Styles for typography elements such as headings, paragraphs, lists that are used within the rich text.",
+                          "type": "TEXT",
+                          "truncated": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Playground",
+          "type": "FRAME",
+          "visible": true,
+          "layout": {
+            "mode": "VERTICAL",
+            "spacing": 16,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "primaryAlign": "MIN",
+            "counterAlign": "CENTER"
+          },
+          "children": [
+            {
+              "name": "Title",
+              "type": "FRAME",
+              "visible": true,
+              "layout": {
+                "mode": "HORIZONTAL",
+                "spacing": 8,
+                "padding": {
+                  "top": 0,
+                  "right": 16,
+                  "bottom": 0,
+                  "left": 16
+                },
+                "primaryAlign": "CENTER",
+                "counterAlign": "MIN"
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "opacity": 1
+                }
+              ],
+              "children": [
+                {
+                  "name": "Wrapper",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layout": {
+                    "mode": "HORIZONTAL",
+                    "spacing": 16,
+                    "padding": {
+                      "top": 0,
+                      "right": 16,
+                      "bottom": 0,
+                      "left": 16
+                    },
+                    "primaryAlign": "CENTER",
+                    "counterAlign": "CENTER"
+                  },
+                  "children": [
+                    {
+                      "name": "Playground",
+                      "type": "TEXT",
+                      "visible": true,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "color": {
+                            "r": 0.03921568766236305,
+                            "g": 0.03921568766236305,
+                            "b": 0.03921568766236305
+                          },
+                          "opacity": 1
+                        }
+                      ],
+                      "text": {
+                        "content": "Playground",
+                        "fontSize": 20,
+                        "fontWeight": 600,
+                        "textAlignHorizontal": "LEFT"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Preview",
+              "type": "FRAME",
+              "visible": true,
+              "layout": {
+                "mode": "VERTICAL",
+                "spacing": 16,
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "primaryAlign": "MIN",
+                "counterAlign": "CENTER"
+              },
+              "strokes": {
+                "colors": [
+                  {
+                    "r": 0.8980392217636108,
+                    "g": 0.8980392217636108,
+                    "b": 0.8980392217636108
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "name": "Wrapper",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layout": {
+                    "mode": "VERTICAL",
+                    "spacing": 16,
+                    "padding": {
+                      "top": 16,
+                      "right": 16,
+                      "bottom": 16,
+                      "left": 16
+                    },
+                    "primaryAlign": "MIN",
+                    "counterAlign": "MIN"
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.9607843160629272,
+                        "g": 0.9607843160629272,
+                        "b": 0.9607843160629272
+                      },
+                      "opacity": 1
+                    },
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "opacity": 0.4000000059604645
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Light",
+                      "type": "FRAME",
+                      "visible": true,
+                      "layout": {
+                        "mode": "VERTICAL",
+                        "spacing": 64,
+                        "padding": {
+                          "top": 128,
+                          "right": 16,
+                          "bottom": 128,
+                          "left": 16
+                        },
+                        "primaryAlign": "CENTER",
+                        "counterAlign": "CENTER"
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "opacity": 1
+                        }
+                      ],
+                      "strokes": {
+                        "weight": 1,
+                        "colors": [
+                          {
+                            "r": 0.8980392217636108,
+                            "g": 0.8980392217636108,
+                            "b": 0.8980392217636108
+                          }
+                        ]
+                      },
+                      "effects": [
+                        {
+                          "type": "DROP_SHADOW",
+                          "radius": 2,
+                          "color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0.05000000074505806
+                          }
+                        }
+                      ],
+                      "cornerRadius": 16,
+                      "children": [
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "ItemGroup",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "FRAME",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "FRAME",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "ItemGroup",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        }
+                      ],
+                      "childrenTruncated": 1
+                    },
+                    {
+                      "name": "Light",
+                      "type": "FRAME",
+                      "visible": true,
+                      "layout": {
+                        "mode": "VERTICAL",
+                        "spacing": 64,
+                        "padding": {
+                          "top": 128,
+                          "right": 16,
+                          "bottom": 128,
+                          "left": 16
+                        },
+                        "primaryAlign": "CENTER",
+                        "counterAlign": "CENTER"
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "color": {
+                            "r": 0.03921568766236305,
+                            "g": 0.03921568766236305,
+                            "b": 0.03921568766236305
+                          },
+                          "opacity": 1
+                        }
+                      ],
+                      "strokes": {
+                        "weight": 1,
+                        "colors": [
+                          {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          }
+                        ]
+                      },
+                      "effects": [
+                        {
+                          "type": "DROP_SHADOW",
+                          "radius": 2,
+                          "color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0.05000000074505806
+                          }
+                        }
+                      ],
+                      "cornerRadius": 16,
+                      "children": [
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "ItemGroup",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "FRAME",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "FRAME",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Item",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        },
+                        {
+                          "name": "ItemGroup",
+                          "type": "INSTANCE",
+                          "truncated": true
+                        }
+                      ],
+                      "childrenTruncated": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Footer",
+          "type": "FRAME",
+          "visible": true,
+          "layout": {
+            "mode": "HORIZONTAL",
+            "spacing": 64,
+            "padding": {
+              "top": 64,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "primaryAlign": "CENTER",
+            "counterAlign": "MIN"
+          },
+          "children": [
+            {
+              "name": "Description",
+              "type": "FRAME",
+              "visible": true,
+              "layout": {
+                "mode": "HORIZONTAL",
+                "spacing": 8,
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "primaryAlign": "CENTER",
+                "counterAlign": "MIN"
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "opacity": 1
+                }
+              ],
+              "strokes": {
+                "colors": [
+                  {
+                    "r": 0.8980392217636108,
+                    "g": 0.8980392217636108,
+                    "b": 0.8980392217636108
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "name": "Wrapper",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layout": {
+                    "mode": "HORIZONTAL",
+                    "spacing": 8,
+                    "padding": {
+                      "top": 16,
+                      "right": 16,
+                      "bottom": 16,
+                      "left": 16
+                    },
+                    "primaryAlign": "SPACE_BETWEEN",
+                    "counterAlign": "CENTER"
+                  },
+                  "children": [
+                    {
+                      "name": "© 2025 shadcndesign.com",
+                      "type": "TEXT",
+                      "visible": true,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "color": {
+                            "r": 0.45098039507865906,
+                            "g": 0.45098039507865906,
+                            "b": 0.45098039507865906
+                          },
+                          "opacity": 1
+                        }
+                      ],
+                      "text": {
+                        "content": "© 2025 shadcndesign.com",
+                        "fontSize": 18,
+                        "fontWeight": 400,
+                        "textAlignHorizontal": "LEFT"
+                      }
+                    },
+                    {
+                      "name": "Wrapper",
+                      "type": "FRAME",
+                      "visible": true,
+                      "layout": {
+                        "mode": "HORIZONTAL",
+                        "spacing": 32,
+                        "padding": {
+                          "top": 0,
+                          "right": 0,
+                          "bottom": 0,
+                          "left": 0
+                        },
+                        "primaryAlign": "CENTER",
+                        "counterAlign": "CENTER"
+                      },
+                      "children": [
+                        {
+                          "name": "Docs",
+                          "type": "TEXT",
+                          "truncated": true
+                        },
+                        {
+                          "name": "Licensing",
+                          "type": "TEXT",
+                          "truncated": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Container Line",
+      "type": "RECTANGLE",
+      "visible": true,
+      "strokes": {
+        "colors": [
+          {
+            "r": 0.8980392217636108,
+            "g": 0.8980392217636108,
+            "b": 0.8980392217636108
+          }
+        ]
+      }
+    }
+  ]
+}
+
+# Requirements
+1. Use React + TypeScript
+2. Use ShadCN components when appropriate (Button, Card, Badge, etc.)
+3. Use Tailwind CSS for all styling (no inline styles)
+4. Match the design as closely as possible
+5. Use proper TypeScript types
+6. Include prop types for customization (variant, size, etc.)
+7. Add JSDoc comments
+8. Follow React best practices
+9. Make it responsive and accessible
+
+# Output Format
+Provide ONLY the complete React component code. No explanations, just the code.
+Start directly with the imports, no markdown code blocks.
+The component should be production-ready and properly typed.
+
+Generate the component now:

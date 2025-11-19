@@ -1,0 +1,83 @@
+{
+  "id": "789:012",
+  "name": "Product Card",
+  "type": "COMPONENT",
+  "properties": {
+    "layout": "vertical",
+    "hasImage": true
+  },
+  "metadata": {
+    "version": "1.0",
+    "lastModified": "2025-11-11T15:00:00Z",
+    "description": "Card component for displaying product information"
+  },
+  "figmaNode": {
+    "id": "789:012",
+    "name": "Product Card",
+    "type": "COMPONENT",
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 300,
+      "height": 400
+    },
+    "fills": [
+      {
+        "type": "SOLID",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "strokes": [
+      {
+        "type": "SOLID",
+        "color": "rgb(229, 231, 235)",
+        "opacity": 1
+      }
+    ],
+    "cornerRadius": 8,
+    "children": [
+      {
+        "id": "789:013",
+        "name": "Image",
+        "type": "RECTANGLE",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 300,
+          "height": 200
+        }
+      },
+      {
+        "id": "789:014",
+        "name": "Content",
+        "type": "FRAME",
+        "children": [
+          {
+            "id": "789:015",
+            "name": "Title",
+            "type": "TEXT",
+            "characters": "Product Name",
+            "fontSize": 18,
+            "fontWeight": 600
+          },
+          {
+            "id": "789:016",
+            "name": "Description",
+            "type": "TEXT",
+            "characters": "Product description goes here",
+            "fontSize": 14,
+            "fontWeight": 400
+          },
+          {
+            "id": "789:017",
+            "name": "Price",
+            "type": "TEXT",
+            "characters": "$99.99",
+            "fontSize": 16,
+            "fontWeight": 700
+          }
+        ]
+      }
+    ]
+  }
+}

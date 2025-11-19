@@ -1,0 +1,25 @@
+{
+  "generated": "2025-11-11T18:43:39.145Z",
+  "count": 1,
+  "exports": [
+    {
+      "id": "17085-177606",
+      "name": "Button",
+      "nodeId": "17085:177606",
+      "exportDate": "2025-11-11T15:50:40.055Z",
+      "figmaImagePath": "/figma-exports/Button_17085:177606_2025-11-11T15-50-56-958Z.png",
+      "figmaSvgPath": "/figma-exports/Button_17085:177606_2025-11-11T15-50-56-958Z.svg",
+      "figmaJsonPath": "/figma-exports/Button_17085_177606_2025-11-11T15-50-42-825Z.json",
+      "generatedComponentPath": "@/components/generated/Button",
+      "metadata": {
+        "width": 1536,
+        "height": 6524,
+        "fileKey": "unknown",
+        "fileName": "Zephyr Cloud ShadCN Design System",
+        "generationCost": 0.048246,
+        "generationTokens": 5362,
+        "generationModel": "anthropic/claude-sonnet-4.5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "componentName": "Item",
+  "generatedAt": "2025-11-11T16:56:30.717Z",
+  "model": "anthropic/claude-sonnet-4.5",
+  "tokensUsed": 8050,
+  "cost": 0.044081999999999996,
+  "inputFile": "/Users/zackarychapple/code/figma-research-clean/third_pass/exports_test/Item_24341_12448_2025-11-11T16-53-29-012Z.json",
+  "outputFile": "/Users/zackarychapple/code/figma-research-clean/third_pass/exports_test/generated/Item.tsx"
+}

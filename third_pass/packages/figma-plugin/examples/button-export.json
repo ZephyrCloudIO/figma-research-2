@@ -1,0 +1,123 @@
+{
+  "version": "1.0.0",
+  "exportDate": "2025-11-11T15:30:00.000Z",
+  "fileKey": "MMMjqwWNYZAg0YlIeL9aJZ",
+  "fileName": "Design System",
+  "nodeId": "18491:22435",
+  "nodeName": "Button/Primary",
+  "node": {
+    "id": "18491:22435",
+    "name": "Button/Primary",
+    "type": "COMPONENT",
+    "visible": true,
+    "locked": false,
+    "width": 120,
+    "height": 40,
+    "x": 0,
+    "y": 0,
+    "rotation": 0,
+    "opacity": 1,
+    "blendMode": "PASS_THROUGH",
+    "layoutMode": "HORIZONTAL",
+    "layoutAlign": "INHERIT",
+    "layoutGrow": 0,
+    "primaryAxisSizingMode": "AUTO",
+    "counterAxisSizingMode": "FIXED",
+    "primaryAxisAlignItems": "CENTER",
+    "counterAxisAlignItems": "CENTER",
+    "paddingLeft": 16,
+    "paddingRight": 16,
+    "paddingTop": 8,
+    "paddingBottom": 8,
+    "itemSpacing": 8,
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.2,
+          "g": 0.4,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ],
+    "strokes": [],
+    "cornerRadius": 6,
+    "effects": [
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "radius": 4,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.1
+        },
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "spread": 0,
+        "showShadowBehindNode": false
+      }
+    ],
+    "componentId": "18491:22435",
+    "clipsContent": false,
+    "children": [
+      {
+        "id": "18491:22436",
+        "name": "Label",
+        "type": "TEXT",
+        "visible": true,
+        "locked": false,
+        "width": 60,
+        "height": 20,
+        "x": 30,
+        "y": 10,
+        "rotation": 0,
+        "opacity": 1,
+        "characters": "Click me",
+        "fontSize": 14,
+        "fontName": {
+          "family": "Inter",
+          "style": "Medium"
+        },
+        "fontWeight": 500,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "CENTER",
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "letterSpacing": {
+          "value": 0,
+          "units": "PIXELS"
+        },
+        "lineHeight": {
+          "value": 20,
+          "units": "PIXELS"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          }
+        ],
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        }
+      }
+    ]
+  }
+}

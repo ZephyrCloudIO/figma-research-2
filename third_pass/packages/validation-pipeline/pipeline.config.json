@@ -1,0 +1,11 @@
+{
+  "codeGenerationModel": "anthropic/claude-sonnet-4.5",
+  "embeddingModel": "openai/text-embedding-3-small",
+  "visionModel": "openai/gpt-4o",
+  "databasePath": "./data/components.db",
+  "outputDir": "./generated",
+  "enableCaching": true,
+  "enableVisualValidation": false,
+  "enableSemanticMatching": true,
+  "logLevel": "info"
+}

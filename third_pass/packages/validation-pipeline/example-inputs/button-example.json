@@ -1,0 +1,63 @@
+{
+  "id": "123:456",
+  "name": "Primary Button",
+  "type": "COMPONENT",
+  "properties": {
+    "variant": "primary",
+    "size": "medium"
+  },
+  "metadata": {
+    "version": "1.0",
+    "lastModified": "2025-11-11T15:00:00Z",
+    "author": "Designer Name",
+    "description": "Primary action button for main CTAs",
+    "tags": ["button", "primary", "cta"]
+  },
+  "figmaNode": {
+    "id": "123:456",
+    "name": "Primary Button",
+    "type": "COMPONENT",
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 120,
+      "height": 40
+    },
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "color": "rgb(0, 0, 0)"
+      }
+    ],
+    "strokes": [],
+    "effects": [
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "radius": 4,
+        "color": "rgba(0, 0, 0, 0.1)",
+        "offset": { "x": 0, "y": 2 },
+        "spread": 0
+      }
+    ],
+    "cornerRadius": 6,
+    "children": [
+      {
+        "id": "123:457",
+        "name": "Label",
+        "type": "TEXT",
+        "characters": "Button",
+        "fontSize": 14,
+        "fontWeight": 500,
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": "rgb(255, 255, 255)"
+          }
+        ]
+      }
+    ]
+  }
+}

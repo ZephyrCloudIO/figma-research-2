@@ -1,0 +1,52 @@
+{
+  "name": "@figma-research/validation-pipeline",
+  "version": "1.0.0",
+  "description": "End-to-end validation pipeline for Figma-to-code workflow with React/ShadCN generation",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "figma-generate": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "generate": "tsx src/cli.ts",
+    "test": "vitest",
+    "lint": "eslint src",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "figma",
+    "code-generation",
+    "react",
+    "shadcn",
+    "validation",
+    "design-to-code"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "zod": "^4.1.12",
+    "dotenv": "^17.2.3",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
+    "adm-zip": "^0.5.16",
+    "commander": "^14.0.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24.10.0",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/pngjs": "^6.0.5",
+    "@types/adm-zip": "^0.5.7",
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.6",
+    "vitest": "^4.0.8",
+    "eslint": "^9.39.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
